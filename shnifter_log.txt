@@ -1,0 +1,80 @@
+[2025-07-02T23:57:38] [INFO] Launching The Shnifter Trader GUI...
+[2025-07-02T23:58:22] [INFO] Backtest started.
+[2025-07-02T23:58:22] [WARNING] Invalid providers argument (False), using default provider list.
+[2025-07-02T23:58:36] [INFO] Backtest for SONY (YFinance (default)): PnL=7.28, Win Rate=58.4%, Trades=0
+[2025-07-02T23:58:36] [INFO] Backtest completed.
+[2025-07-02T23:59:00] [INFO] Backtest started.
+[2025-07-02T23:59:00] [WARNING] Invalid providers argument (False), using default provider list.
+[2025-07-02T23:59:13] [INFO] Backtest for SONY (YFinance (default)): PnL=18.31, Win Rate=48.8%, Trades=0
+[2025-07-02T23:59:28] [INFO] Backtest for NVDA (YFinance (default)): PnL=8.94, Win Rate=46.2%, Trades=0
+[2025-07-02T23:59:33] [INFO] Backtest completed.
+{"timestamp": "2025-07-02T23:59:45", "level": "INFO", "message": "Exporting last decisions to CSV."}
+{"timestamp": "2025-07-02T23:59:45", "level": "WARNING", "message": "No decisions to export."}
+{"timestamp": "2025-07-03T00:00:00", "level": "INFO", "message": "Start Analysis button clicked."}
+{"timestamp": "2025-07-03T00:00:00", "level": "INFO", "message": "Selected LLM model: qwen3:8b"}
+{"timestamp": "2025-07-03T00:00:00", "level": "DEBUG", "message": "User triggered analysis for: SONY"}
+{"timestamp": "2025-07-03T00:00:00", "level": "DEBUG", "message": "User triggered analysis for: NVDA"}
+{"timestamp": "2025-07-03T00:00:00", "level": "INFO", "message": "Started analysis for tickers: SONY, NVDA"}
+{"timestamp": "2025-07-03T00:00:00", "level": "INFO", "message": "Start Analysis button clicked."}
+{"timestamp": "2025-07-03T00:02:08", "level": "INFO", "message": "Launching The Shnifter Trader GUI..."}
+{"timestamp": "2025-07-03T00:02:20", "level": "INFO", "message": "Start Analysis button clicked."}
+{"timestamp": "2025-07-03T00:02:20", "level": "INFO", "message": "Selected LLM model: qwen3:8b"}
+{"timestamp": "2025-07-03T00:02:20", "level": "DEBUG", "message": "User triggered analysis for: SONY"}
+{"timestamp": "2025-07-03T00:02:20", "level": "INFO", "message": "Started analysis for tickers: SONY"}
+{"timestamp": "2025-07-03T00:02:20", "level": "INFO", "message": "Start Analysis button clicked."}
+{"timestamp": "2025-07-03T21:15:30", "level": "INFO", "message": "Launching The Shnifter Trader GUI..."}
+{"timestamp": "2025-07-03T21:15:58", "level": "INFO", "message": "Backtest started."}
+{"timestamp": "2025-07-03T21:15:58", "level": "WARNING", "message": "Invalid providers argument (False), using default provider list."}
+{"timestamp": "2025-07-03T21:16:11", "level": "INFO", "message": "Backtest for SONY (YFinance (default)): PnL=3.53, Win Rate=53.4%, Trades=0"}
+{"timestamp": "2025-07-03T21:16:24", "level": "INFO", "message": "Backtest for NVDA (YFinance (default)): PnL=13.08, Win Rate=65.3%, Trades=0"}
+{"timestamp": "2025-07-03T21:16:24", "level": "INFO", "message": "Backtest completed."}
+{"timestamp": "2025-07-03T21:19:29", "level": "INFO", "message": "Start Analysis button clicked."}
+{"timestamp": "2025-07-03T21:19:29", "level": "INFO", "message": "Selected LLM model: llama3:8b"}
+{"timestamp": "2025-07-03T21:19:29", "level": "DEBUG", "message": "User triggered analysis for: NVDA"}
+{"timestamp": "2025-07-03T21:19:29", "level": "INFO", "message": "Started analysis for tickers: NVDA"}
+{"timestamp": "2025-07-03T21:19:29", "level": "INFO", "message": "Start Analysis button clicked."}
+{"timestamp": "2025-07-03T21:19:29", "level": "WARNING", "message": "Analysis already in progress. Please wait for completion."}
+{"timestamp": "2025-07-03T21:19:29", "level": "DEBUG", "message": "Starting live data fetch and analysis for: NVDA"}
+{"timestamp": "2025-07-03T21:19:29", "level": "ERROR", "message": "An error occurred: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters."}
+{"timestamp": "2025-07-03T21:19:29", "level": "INFO", "message": "Analysis complete for: NVDA"}
+{"timestamp": "2025-07-03T21:19:29", "level": "ERROR", "message": "Analysis failed for: NVDA"}
+{"timestamp": "2025-07-03T21:19:29", "level": "DEBUG", "message": "Analysis thread completed and output delivered to GUI"}
+{"timestamp": "2025-07-03T21:19:29", "level": "DEBUG", "message": "All analysis workers completed. Button re-enabled."}
+{"timestamp": "2025-07-03T21:19:41", "level": "INFO", "message": "Start Analysis button clicked."}
+{"timestamp": "2025-07-03T21:19:41", "level": "INFO", "message": "Selected LLM model: qwen3:8b"}
+{"timestamp": "2025-07-03T21:19:41", "level": "DEBUG", "message": "User triggered analysis for: NVDA"}
+{"timestamp": "2025-07-03T21:19:41", "level": "INFO", "message": "Started analysis for tickers: NVDA"}
+{"timestamp": "2025-07-03T21:19:41", "level": "INFO", "message": "Start Analysis button clicked."}
+{"timestamp": "2025-07-03T21:19:41", "level": "WARNING", "message": "Analysis already in progress. Please wait for completion."}
+{"timestamp": "2025-07-03T21:19:41", "level": "DEBUG", "message": "Starting live data fetch and analysis for: NVDA"}
+{"timestamp": "2025-07-03T21:19:41", "level": "ERROR", "message": "An error occurred: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters."}
+{"timestamp": "2025-07-03T21:19:41", "level": "INFO", "message": "Analysis complete for: NVDA"}
+{"timestamp": "2025-07-03T21:19:41", "level": "ERROR", "message": "Analysis failed for: NVDA"}
+{"timestamp": "2025-07-03T21:19:41", "level": "DEBUG", "message": "Analysis thread completed and output delivered to GUI"}
+{"timestamp": "2025-07-03T21:19:41", "level": "DEBUG", "message": "All analysis workers completed. Button re-enabled."}
+{"timestamp": "2025-07-03T21:19:47", "level": "INFO", "message": "Application closing. Attempting to stop all analysis threads."}
+{"timestamp": "2025-07-03T21:19:47", "level": "INFO", "message": "All analysis threads stopped. Application closed."}
+{"timestamp": "2025-07-03T21:21:29", "level": "INFO", "message": "Launching The Shnifter Trader GUI..."}
+{"timestamp": "2025-07-03T21:22:12", "level": "INFO", "message": "Start Analysis button clicked."}
+{"timestamp": "2025-07-03T21:22:12", "level": "INFO", "message": "Selected LLM model: llama3:8b"}
+{"timestamp": "2025-07-03T21:22:12", "level": "DEBUG", "message": "User triggered analysis for: NVDA"}
+{"timestamp": "2025-07-03T21:22:12", "level": "INFO", "message": "Started analysis for tickers: NVDA"}
+{"timestamp": "2025-07-03T21:22:12", "level": "INFO", "message": "Start Analysis button clicked."}
+{"timestamp": "2025-07-03T21:22:12", "level": "WARNING", "message": "Analysis already in progress. Please wait for completion."}
+{"timestamp": "2025-07-03T21:22:12", "level": "DEBUG", "message": "Starting live data fetch and analysis for: NVDA"}
+{"timestamp": "2025-07-03T21:22:13", "level": "ERROR", "message": "An error occurred: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters."}
+{"timestamp": "2025-07-03T21:22:13", "level": "INFO", "message": "Analysis complete for: NVDA"}
+{"timestamp": "2025-07-03T21:22:13", "level": "ERROR", "message": "Analysis failed for: NVDA"}
+{"timestamp": "2025-07-03T21:22:13", "level": "DEBUG", "message": "Analysis thread completed and output delivered to GUI"}
+{"timestamp": "2025-07-03T21:22:13", "level": "DEBUG", "message": "All analysis workers completed. Button re-enabled."}
+{"timestamp": "2025-07-03T21:22:40", "level": "INFO", "message": "Backtest started."}
+{"timestamp": "2025-07-03T21:22:40", "level": "WARNING", "message": "Invalid providers argument (False), using default provider list."}
+{"timestamp": "2025-07-03T21:22:54", "level": "INFO", "message": "Backtest for NVDA (YFinance (default)): PnL=-2.91, Win Rate=60.0%, Trades=0"}
+{"timestamp": "2025-07-03T21:22:54", "level": "INFO", "message": "Backtest completed."}
+{"timestamp": "2025-07-03T21:23:08", "level": "INFO", "message": "Backtest started."}
+{"timestamp": "2025-07-03T21:23:08", "level": "WARNING", "message": "Invalid providers argument (False), using default provider list."}
+{"timestamp": "2025-07-03T21:23:21", "level": "INFO", "message": "Backtest for NVDA (YFinance (default)): PnL=-5.83, Win Rate=55.7%, Trades=0"}
+{"timestamp": "2025-07-03T21:23:34", "level": "INFO", "message": "Backtest for SONY (YFinance (default)): PnL=6.57, Win Rate=62.7%, Trades=0"}
+{"timestamp": "2025-07-03T21:23:35", "level": "INFO", "message": "Backtest completed."}
+{"timestamp": "2025-07-03T21:23:39", "level": "INFO", "message": "Application closing. Attempting to stop all analysis threads."}
+{"timestamp": "2025-07-03T21:23:39", "level": "INFO", "message": "All analysis threads stopped. Application closed."}

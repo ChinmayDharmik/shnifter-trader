@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp": "2025-07-02T23:57:38",
+    "level": "INFO",
+    "message": "Launching The Shnifter Trader GUI..."
+  },
+  {
+    "timestamp": "2025-07-02T23:58:22",
+    "level": "INFO",
+    "message": "Backtest started."
+  },
+  {
+    "timestamp": "2025-07-02T23:58:22",
+    "level": "WARNING",
+    "message": "Invalid providers argument (False), using default provider list."
+  },
+  {
+    "timestamp": "2025-07-02T23:58:36",
+    "level": "INFO",
+    "message": "Backtest for SONY (YFinance (default)): PnL=7.28, Win Rate=58.4%, Trades=0"
+  },
+  {
+    "timestamp": "2025-07-02T23:58:36",
+    "level": "INFO",
+    "message": "Backtest completed."
+  },
+  {
+    "timestamp": "2025-07-02T23:59:00",
+    "level": "INFO",
+    "message": "Backtest started."
+  },
+  {
+    "timestamp": "2025-07-02T23:59:00",
+    "level": "WARNING",
+    "message": "Invalid providers argument (False), using default provider list."
+  },
+  {
+    "timestamp": "2025-07-02T23:59:13",
+    "level": "INFO",
+    "message": "Backtest for SONY (YFinance (default)): PnL=18.31, Win Rate=48.8%, Trades=0"
+  },
+  {
+    "timestamp": "2025-07-02T23:59:28",
+    "level": "INFO",
+    "message": "Backtest for NVDA (YFinance (default)): PnL=8.94, Win Rate=46.2%, Trades=0"
+  },
+  {
+    "timestamp": "2025-07-02T23:59:33",
+    "level": "INFO",
+    "message": "Backtest completed."
+  }
+]
