@@ -110,3 +110,25 @@ MIT License
 ### Example: NVDA Price Chart
 
 ![NVDA Price Chart](assets/screenshot_nvda.png)
+
+## 🧠 Advanced LLM Features
+
+- **Dual-LLM Mode**: Analyzer and Verifier LLMs (selectable, independently) for self-checking, multi-pass trade validation
+- **LLM Manager Popout**: Toggle dual-LLM mode, select models, and see real-time status (active/inactive)
+- **Dynamic Model Detection**: Auto-detects available Ollama models, supports refresh
+- **Menu Actions**: Run single, dual, or double-pass LLM analysis from the GUI
+- **Event-Driven Everything**: All user actions, model changes, and analysis results are logged and visible in the Event Log popout
+
+## 📈 Real-Time & Modular
+
+- **Real-Time Analysis**: Multi-ticker, multi-threaded, with live log and chart updates
+- **Modular Backend**: Easily extend with new models, providers, or strategies
+- **Popout Windows**: Event log and LLM manager popouts for advanced control
+
+## 🚦 How Dual-LLM Mode Works
+
+1. **Analyzer LLM**: Generates a trade recommendation and reasoning
+2. **Verifier LLM**: Critiques/confirms/revises the Analyzer's output
+3. **Final Action**: Only after both passes is a trade signal generated and logged
+
+I am building Shnifter Trader using custom, original code and ideas. Some inspiration comes from open source projects, but all code is refactored and original for Python 3.13.2.

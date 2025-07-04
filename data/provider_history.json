@@ -1,0 +1,14 @@
+[
+  {
+    "text": "YFinance (default)",
+    "data": {
+      "provider": "YFinance (default)"
+    }
+  },
+  {
+    "text": "FMP",
+    "data": {
+      "provider": "FMP"
+    }
+  }
+]

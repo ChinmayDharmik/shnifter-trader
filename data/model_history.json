@@ -1,0 +1,14 @@
+[
+  {
+    "text": "llama3:8b",
+    "data": {
+      "model": "llama3:8b"
+    }
+  },
+  {
+    "text": "qwen3:8b",
+    "data": {
+      "model": "qwen3:8b"
+    }
+  }
+]

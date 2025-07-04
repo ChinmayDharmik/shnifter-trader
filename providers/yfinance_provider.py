@@ -1,5 +1,8 @@
 import yfinance as yf
+from datetime import datetime
+from typing import List
 import pandas as pd
+from core.data_models import ShnifterNewsData
 
 class YFinanceProvider:
     """
@@ -33,20 +36,26 @@ class YFinanceProvider:
             return pd.DataFrame() # Return empty DataFrame on error
 
     @staticmethod
-    def get_news(ticker: str, limit: int = 20) -> pd.DataFrame:
-        """Fetches news headlines."""
+    def get_news(ticker: str, limit: int = 20) -> List[ShnifterNewsData]:
+        """Fetches news and returns a list of standardized ShnifterNewsData objects."""
         try:
             news_obj = yf.Ticker(ticker)
-            news_data = news_obj.news
-            if not news_data:
-                return pd.DataFrame(columns=['title', 'provider', 'url'])
-            df = pd.DataFrame(news_data)
-            # Ensure required columns exist
-            for col in ['title', 'publisher', 'link']:
-                if col not in df.columns:
-                    df[col] = ""
-            df.rename(columns={"title": "title", "publisher": "provider", "link": "url"}, inplace=True)
-            return df[['title', 'provider', 'url']].head(limit)
+            news_list = news_obj.news
+            if not news_list:
+                return []
+            standardized_news = []
+            for item in news_list[:limit]:
+                published_date = datetime.fromtimestamp(item.get('providerPublishTime', 0))
+                standardized_news.append(
+                    ShnifterNewsData(
+                        date=published_date,
+                        title=item.get('title', ''),
+                        url=item.get('link', ''),
+                        provider='yfinance',
+                        symbols=item.get('relatedTickers', [])
+                    )
+                )
+            return standardized_news
         except Exception as e:
             print(f"yfinance news provider error: {e}")
-            return pd.DataFrame(columns=['title', 'provider', 'url'])
+            return []
