@@ -34,6 +34,7 @@ from shnifterBB.shnifter_bb import ShnifterBB
 from llm_manager.llm_providers import OllamaProvider, OpenAIProvider
 from shnifter_frontend.event_log_popout import EventLogPopout
 from shnifter_frontend.llm_manager_popout import LLMManagerPopout
+from shnifter_frontend.enterprise_parameters_popout import EnterpriseParametersPopout
 from shnifter_frontend.shnifter_table_widget import ShnifterTableWidget
 from shnifter_frontend.shnifter_plotly_widget import ShnifterPlotlyWidget
 from shnifter_frontend.pnl_dashboard_popout import PnLDashboardPopout
@@ -161,26 +162,20 @@ class AnalysisWorker(QThread):
         log = ["  - Running Trend Model (SMA Crossover)..."]
         df['SMA_20'] = df['close'].rolling(window=20).mean()
         df['SMA_50'] = df['close'].rolling(window=50).mean()
-        # Ensure scalar values for formatting
-        try:
-            # Convert to proper scalar values with safer extraction
-            last_sma_20 = df['SMA_20'].iloc[-1]
-            last_sma_50 = df['SMA_50'].iloc[-1]
-            
-            # Patch: If result is a Series, get the first value
-            if isinstance(last_sma_20, pd.Series):
-                last_sma_20 = last_sma_20.iloc[0]
-            if isinstance(last_sma_50, pd.Series):
-                last_sma_50 = last_sma_50.iloc[0]
-            
-            # Safe conversion to float with pandas compatibility
-            last_sma_20_val = float(last_sma_20.iloc[0] if hasattr(last_sma_20, 'iloc') else last_sma_20) if pd.notnull(last_sma_20) else float('nan')
-            last_sma_50_val = float(last_sma_50.iloc[0] if hasattr(last_sma_50, 'iloc') else last_sma_50) if pd.notnull(last_sma_50) else float('nan')
-            log.append(f"    - SMA_20: {last_sma_20_val:.2f}, SMA_50: {last_sma_50_val:.2f}")
-            signal = 'BUY' if last_sma_20_val > last_sma_50_val else 'SELL'
-        except Exception as e:
-            log.append(f"    - SMA calculation error: {e}")
-            signal = 'HOLD'
+        
+        if df['SMA_20'].empty or df['SMA_50'].empty:
+            log.append("    - Not enough data for SMA calculation.")
+            return 'HOLD', log
+
+        last_sma_20_val = df['SMA_20'].iloc[-1]
+        last_sma_50_val = df['SMA_50'].iloc[-1]
+
+        if pd.isna(last_sma_20_val) or pd.isna(last_sma_50_val):
+            log.append("    - SMA values are NaN, holding.")
+            return 'HOLD', log
+
+        log.append(f"    - SMA_20: {last_sma_20_val:.2f}, SMA_50: {last_sma_50_val:.2f}")
+        signal = 'BUY' if last_sma_20_val > last_sma_50_val else 'SELL'
         log.append(f"    -> Signal: {signal}")
         return signal, log
 
@@ -259,51 +254,100 @@ class Exporter:
 
 class BacktestWorker(QThread):
     """Worker thread to run backtests in the background, preventing UI freezes."""
-    backtest_finished_signal = Signal(list)  # Signal to emit a list of result strings
+    backtest_finished_signal = Signal(object)  # Signal to emit a pandas DataFrame with results
 
-    def __init__(self, tickers, providers=None):
+    def __init__(self, tickers, providers=None, enterprise_params=None):
         super().__init__()
         self.tickers = tickers
         self.providers = providers if providers else ['yfinance']
         self.shnifter = ShnifterBB()
+        self.enterprise_params = enterprise_params or {}
 
     def run(self):
         EventLog.emit("INFO", "Starting backtest in background...")
-        results_log = []
+        all_results = []
         try:
             for ticker in self.tickers:
                 for provider in self.providers:
-                    pnl, win_rate, trades = self.simulate_backtest(ticker, provider)
-                    result_msg = f"Backtest for {ticker} ({provider}): PnL={pnl:.2f}, Win Rate={win_rate:.1f}%, Trades={trades}"
+                    pnl, win_rate, trades, results_df = self.simulate_backtest(ticker, provider)
+                    result_msg = f"Backtest for {ticker} ({provider}): PnL=${pnl:.2f}, Win Rate={win_rate:.1f}%, Trades={trades}"
                     EventLog.emit("INFO", result_msg)
-                    results_log.append(result_msg)
+                    all_results.append({
+                        'ticker': ticker,
+                        'provider': provider,
+                        'pnl': pnl,
+                        'win_rate': win_rate,
+                        'trades': trades,
+                        'details': results_df
+                    })
             EventLog.emit("INFO", "Background backtest completed.")
-            self.backtest_finished_signal.emit(results_log)
+            self.backtest_finished_signal.emit(all_results)
         except Exception as e:
             error_msg = f"Error during background backtest: {e}"
             EventLog.emit("ERROR", error_msg)
-            results_log.append(error_msg)
-            self.backtest_finished_signal.emit(results_log)
+            self.backtest_finished_signal.emit([{'error': error_msg}])
 
     def simulate_backtest(self, ticker, provider):
-        # Remove provider parameter since ShnifterBB doesn't support it for historical data
-        # Add required start_date and end_date parameters
-        end_date = datetime.now().strftime('%Y-%m-%d')
-        start_date = (datetime.now() - timedelta(days=365)).strftime('%Y-%m-%d')
-        historical_data = self.shnifter.equity.price.historical(ticker, start_date=start_date, end_date=end_date)
-        if historical_data.to_df().empty:
-            return 0.0, 0.0, 0
-        pnl = np.random.uniform(-10.0, 20.0) * len(historical_data.to_df()) / 100
-        win_rate = np.random.uniform(40.0, 65.0)
-        trades = np.random.randint(50, 150)
-        time.sleep(2)  # Simulate a long-running task
-        return pnl, win_rate, trades
+        start_date = self.enterprise_params.get('start_date', datetime.now() - timedelta(days=365)).strftime('%Y-%m-%d')
+        end_date = self.enterprise_params.get('end_date', datetime.now()).strftime('%Y-%m-%d')
+        
+        historical_data_obj = self.shnifter.equity.price.historical(ticker, start_date=start_date, end_date=end_date)
+        df = historical_data_obj.to_df()
+
+        if df.empty or len(df) < 60: # Need enough data for rolling windows
+            return 0.0, 0.0, 0, pd.DataFrame()
+
+        temp_worker = AnalysisWorker(ticker, news_provider=provider)
+        
+        positions = []
+        cash = 100000  # Starting cash
+        position_size = 0
+        trades = 0
+        wins = 0
+        
+        results_log = []
+
+        for i in range(50, len(df)): # Start after initial SMA window
+            current_price = df['close'].iloc[i]
+            data_slice = df.iloc[:i]
+
+            trend_signal, _ = temp_worker.get_trend_signal(data_slice.copy())
+            ml_signal, _ = temp_worker.get_ml_signal(data_slice.copy())
+            # Sentiment is forward-looking, so we can't easily use it in a simple backtest.
+            # We'll base the decision on Trend and ML.
+            
+            signals = [trend_signal, ml_signal]
+            if signals.count('BUY') >= 1 and position_size == 0: # Buy signal and no position
+                position_size = cash * 0.1 / current_price # Use 10% of cash
+                entry_price = current_price
+                cash -= position_size * entry_price
+                trades += 1
+                positions.append({'entry_price': entry_price, 'size': position_size})
+                results_log.append({'Date': df.index[i], 'Action': 'BUY', 'Price': current_price, 'Size': position_size, 'PnL': 0})
+
+            elif signals.count('SELL') >= 1 and position_size > 0: # Sell signal and have a position
+                exit_price = current_price
+                pnl = (exit_price - positions[-1]['entry_price']) * positions[-1]['size']
+                cash += position_size * exit_price
+                if pnl > 0:
+                    wins += 1
+                position_size = 0
+                results_log.append({'Date': df.index[i], 'Action': 'SELL', 'Price': current_price, 'Size': positions[-1]['size'], 'PnL': pnl})
+                positions.pop()
+
+
+        # Final PnL calculation
+        final_pnl = cash - 100000
+        win_rate = (wins / trades * 100) if trades > 0 else 0
+        
+        return final_pnl, win_rate, trades, pd.DataFrame(results_log)
+
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("The Shnifter Trader")
-        self.setGeometry(100, 100, 800, 600)
+        self.setWindowTitle("The Shnifter Trader - Enterprise Edition")
+        self.setGeometry(100, 100, 1200, 800)
         self.worker = None
         self.auto_timer = QTimer()
         self.auto_timer.timeout.connect(self.start_analysis)
@@ -314,6 +358,26 @@ class MainWindow(QMainWindow):
         self.backtest_workers = []  # Track backtest workers
         self.event_log_popout = None  # Reference to the event log popout
         self.llm_manager_popout = None  # Reference to the LLM manager popout
+        self.enterprise_params_popout = None  # Reference to enterprise parameters popout
+        
+        # Enterprise parameters with defaults
+        self.enterprise_params = {
+            'start_date': datetime.now() - timedelta(days=365),
+            'end_date': datetime.now(),
+            'live_mode': True,
+            'update_interval': 10,  # seconds
+            'data_granularity': '1min',
+            'premarket_hours': True,
+            'extended_hours': True,
+            'realtime_quotes': True,
+            'auto_refresh': True,
+            'max_history_days': 365,
+            'streaming_enabled': False
+        }
+        
+        # Live update timer for enterprise features
+        self.live_timer = QTimer()
+        self.live_timer.timeout.connect(self.trigger_live_update)
         
         # Shnifterized frontend popout references
         self.smart_table_popout = None
@@ -450,37 +514,40 @@ class MainWindow(QMainWindow):
         input_layout.addWidget(self.start_button)
         main_layout.addLayout(input_layout)
 
-        # Year range slider
-        from PySide6.QtWidgets import QSlider, QSpinBox
-        year_layout = QHBoxLayout()
-        self.year_label = QLabel("Years of history:")
-        self.year_slider = QSlider(Qt.Horizontal)
-        self.year_slider.setMinimum(1)
-        self.year_slider.setMaximum(10)
-        self.year_slider.setValue(1)
-        self.year_slider.setTickInterval(1)
-        self.year_slider.setTickPosition(QSlider.TicksBelow)
-        self.year_spin = QSpinBox()
-        self.year_spin.setMinimum(1)
-        self.year_spin.setMaximum(10)
-        self.year_spin.setValue(1)
-        self.year_slider.valueChanged.connect(self.year_spin.setValue)
-        self.year_spin.valueChanged.connect(self.year_slider.setValue)
-        self.year_slider.valueChanged.connect(self.refresh_chart)
-        year_layout.addWidget(self.year_label)
-        year_layout.addWidget(self.year_slider)
-        year_layout.addWidget(self.year_spin)
-        main_layout.addLayout(year_layout)
-
-        # Live mode and refresh
-        live_layout = QHBoxLayout()
-        self.live_checkbox = QCheckBox("Live Mode (Auto-Refresh)")
-        self.live_checkbox.stateChanged.connect(self.toggle_live_mode)
-        self.refresh_chart_btn = QPushButton("Refresh Chart")
+        # Enterprise Parameters Section
+        enterprise_layout = QHBoxLayout()
+        self.enterprise_params_btn = QPushButton("🏢 Enterprise Parameters")
+        self.enterprise_params_btn.setStyleSheet("QPushButton { background-color: #2196F3; color: white; font-weight: bold; padding: 8px; }")
+        self.enterprise_params_btn.clicked.connect(self.open_enterprise_parameters)
+        self.enterprise_params_btn.setToolTip("Configure precise date ranges, live data settings, and performance parameters")
+        
+        # Quick status indicators
+        self.live_status_label = QLabel("🔴 Live Mode: ON")
+        self.live_status_label.setStyleSheet("QLabel { background-color: #4CAF50; color: white; padding: 4px; border-radius: 4px; }")
+        
+        self.date_range_label = QLabel("📅 Range: Last 1 Year")
+        self.date_range_label.setStyleSheet("QLabel { background-color: #FF9800; color: white; padding: 4px; border-radius: 4px; }")
+        
+        self.update_interval_label = QLabel("⏱️ Update: 10s")
+        self.update_interval_label.setStyleSheet("QLabel { background-color: #9C27B0; color: white; padding: 4px; border-radius: 4px; }")
+        
+        enterprise_layout.addWidget(self.enterprise_params_btn)
+        enterprise_layout.addWidget(self.live_status_label)
+        enterprise_layout.addWidget(self.date_range_label)
+        enterprise_layout.addWidget(self.update_interval_label)
+        enterprise_layout.addStretch()
+        
+        # Quick action buttons
+        self.live_update_btn = QPushButton("🔴 Update Now")
+        self.live_update_btn.setStyleSheet("QPushButton { background-color: #f44336; color: white; }")
+        self.live_update_btn.clicked.connect(self.trigger_live_update)
+        
+        self.refresh_chart_btn = QPushButton("📊 Refresh Chart")
         self.refresh_chart_btn.clicked.connect(self.refresh_chart)
-        live_layout.addWidget(self.live_checkbox)
-        live_layout.addWidget(self.refresh_chart_btn)
-        main_layout.addLayout(live_layout)
+        
+        enterprise_layout.addWidget(self.live_update_btn)
+        enterprise_layout.addWidget(self.refresh_chart_btn)
+        main_layout.addLayout(enterprise_layout)
 
         self.tabs = QTabWidget()
         self.log_tab = QWidget()
@@ -536,28 +603,50 @@ class MainWindow(QMainWindow):
         ticker = tickers[0]  # Only show first ticker for chart
         try:
             shnifter = ShnifterBB()
-            end_date = datetime.now().strftime('%Y-%m-%d')
-            # Use year slider value for start_date
-            years = self.year_slider.value() if hasattr(self, 'year_slider') else 1
-            start_date = (datetime.now() - timedelta(days=365*years)).strftime('%Y-%m-%d')
+            
+            # Use enterprise date range instead of year slider
+            date_range = self.get_enterprise_date_range()
+            start_date = date_range['start_date']
+            end_date = date_range['end_date']
+            
             data_obj = shnifter.equity.price.historical(ticker, start_date=start_date, end_date=end_date)
             df = data_obj.to_df()
             if df.empty:
                 self.figure.clear()
                 ax = self.figure.add_subplot(111)
-                ax.text(0.5, 0.5, "No data", ha='center', va='center')
+                ax.text(0.5, 0.5, f"No data for {ticker}\nDate range: {start_date} to {end_date}", ha='center', va='center')
                 self.canvas.draw()
+                EventLog.emit("WARNING", f"No chart data available for {ticker}")
                 return
+                
+            # Add enterprise data granularity info
+            granularity = self.enterprise_params.get('data_granularity', '1min')
+            EventLog.emit("INFO", f"Chart refreshed for {ticker} ({granularity} granularity)")
+            
             self.figure.clear()
             ax = self.figure.add_subplot(111)
-            ax.plot(df.index, df['close'], label='Close Price', color='blue')
+            ax.plot(df.index, df['close'], label='Close Price', color='blue', linewidth=1.5)
             if 'SMA_20' not in df.columns:
                 df['SMA_20'] = df['close'].rolling(window=20).mean()
             if 'SMA_50' not in df.columns:
                 df['SMA_50'] = df['close'].rolling(window=50).mean()
             ax.plot(df.index, df['SMA_20'], label='SMA 20', color='orange', linestyle='--')
             ax.plot(df.index, df['SMA_50'], label='SMA 50', color='green', linestyle='--')
-            ax.set_title(f"{ticker} Price Chart ({years} year{'s' if years > 1 else ''})")
+            
+            # Create dynamic title based on date range
+            days_diff = (date_range['end_datetime'] - date_range['start_datetime']).days
+            if days_diff == 1:
+                period_text = "1 Day"
+            elif days_diff < 30:
+                period_text = f"{days_diff} Days"
+            elif days_diff < 365:
+                months = days_diff // 30
+                period_text = f"{months} Month{'s' if months > 1 else ''}"
+            else:
+                years = days_diff // 365
+                period_text = f"{years} Year{'s' if years > 1 else ''}"
+                
+            ax.set_title(f"{ticker} Price Chart ({period_text}) - {granularity} granularity")
             ax.set_xlabel("Date")
             ax.set_ylabel("Price")
             ax.legend()
@@ -723,18 +812,47 @@ class MainWindow(QMainWindow):
             return
         tickers = [ticker.strip().upper() for ticker in tickers_text.split(',') if ticker.strip()]
         EventLog.emit("INFO", f"Backtest requested for: {', '.join(tickers)}. Starting worker...")
-        worker = BacktestWorker(tickers)
+        
+        # Pass enterprise parameters to the backtest worker
+        worker = BacktestWorker(tickers, enterprise_params=self.enterprise_params)
         worker.backtest_finished_signal.connect(self.on_backtest_complete)
         worker.finished.connect(self.remove_finished_worker)
         self.backtest_workers.append(worker)
         worker.start()
 
-    @Slot(list)
-    def on_backtest_complete(self, results):
+    @Slot(object)
+    def on_backtest_complete(self, all_results):
         EventLog.emit("INFO", "Backtest worker finished. Results received.")
-        # Optionally display results in a popout or log
-        for msg in results:
-            self.log_display.append(msg)
+        self.tabs.setCurrentWidget(self.results_tab)
+        
+        if not all_results or 'error' in all_results[0]:
+            error_msg = all_results[0].get('error', 'Unknown error')
+            self.results_table.setRowCount(1)
+            self.results_table.setColumnCount(1)
+            self.results_table.setItem(0, 0, QTableWidgetItem(f"Backtest failed: {error_msg}"))
+            return
+
+        # For simplicity, display the results of the first ticker's backtest details
+        first_result = all_results[0]
+        results_df = first_result.get('details')
+
+        if results_df is None or results_df.empty:
+            self.results_table.setRowCount(1)
+            self.results_table.setColumnCount(1)
+            self.results_table.setItem(0, 0, QTableWidgetItem(f"No trades executed for {first_result['ticker']}."))
+            return
+
+        self.results_table.setRowCount(results_df.shape[0])
+        self.results_table.setColumnCount(results_df.shape[1])
+        self.results_table.setHorizontalHeaderLabels(results_df.columns)
+
+        for i, row in results_df.iterrows():
+            for j, col in enumerate(results_df.columns):
+                item = QTableWidgetItem(str(row[col]))
+                self.results_table.setItem(i, j, item)
+        
+        self.results_table.resizeColumnsToContents()
+
 
     @Slot()
     def remove_finished_worker(self):
@@ -970,6 +1088,138 @@ class MainWindow(QMainWindow):
             
         except Exception as e:
             EventLog.emit("ERROR", f"Demo session generation error: {e}")
+
+    def open_enterprise_parameters(self):
+        """Open the enterprise parameters configuration popout"""
+        try:
+            if self.enterprise_params_popout is None:
+                self.enterprise_params_popout = EnterpriseParametersPopout(self)
+                
+                # Connect signals
+                self.enterprise_params_popout.parameters_changed.connect(self.on_enterprise_parameters_changed)
+                self.enterprise_params_popout.live_update_requested.connect(self.trigger_live_update)
+                
+                # Set current parameters
+                self.enterprise_params_popout.current_params = self.enterprise_params.copy()
+                
+            self.enterprise_params_popout.show()
+            self.enterprise_params_popout.raise_()
+            EventLog.emit("INFO", "Enterprise parameters popout opened")
+            
+        except Exception as e:
+            EventLog.emit("ERROR", f"Failed to open enterprise parameters: {e}")
+            
+    def on_enterprise_parameters_changed(self, new_params):
+        """Handle changes from enterprise parameters popout"""
+        try:
+            self.enterprise_params.update(new_params)
+            
+            # Update status labels
+            self.update_parameter_status_labels()
+            
+            # Update live timer if interval changed
+            if self.live_timer.isActive():
+                self.live_timer.stop()
+                
+            if new_params.get('live_mode', False):
+                interval_ms = int(new_params.get('update_interval', 10) * 1000)
+                self.live_timer.start(interval_ms)
+                self.live_status_label.setText("🔴 Live Mode: ON")
+                self.live_status_label.setStyleSheet("QLabel { background-color: #4CAF50; color: white; padding: 4px; border-radius: 4px; }")
+            else:
+                self.live_status_label.setText("⚫ Live Mode: OFF")
+                self.live_status_label.setStyleSheet("QLabel { background-color: #757575; color: white; padding: 4px; border-radius: 4px; }")
+            
+            EventLog.emit("INFO", f"Enterprise parameters updated: Live={new_params.get('live_mode')}, Interval={new_params.get('update_interval')}s")
+            
+        except Exception as e:
+            EventLog.emit("ERROR", f"Failed to update enterprise parameters: {e}")
+            
+    def update_parameter_status_labels(self):
+        """Update the parameter status labels in the UI"""
+        try:
+            # Update date range label
+            start_date = self.enterprise_params['start_date']
+            end_date = self.enterprise_params['end_date']
+            days_diff = (end_date - start_date).days
+            
+            if days_diff == 1:
+                range_text = "📅 Range: 1 Day"
+            elif days_diff < 30:
+                range_text = f"📅 Range: {days_diff} Days"
+            elif days_diff < 365:
+                months = days_diff // 30
+                range_text = f"📅 Range: {months} Month{'s' if months > 1 else ''}"
+            else:
+                years = days_diff // 365
+                range_text = f"📅 Range: {years} Year{'s' if years > 1 else ''}"
+                
+            self.date_range_label.setText(range_text)
+            
+            # Update interval label
+            interval = self.enterprise_params['update_interval']
+            if interval < 60:
+                interval_text = f"⏱️ Update: {interval}s"
+            elif interval < 3600:
+                minutes = interval // 60
+                interval_text = f"⏱️ Update: {minutes}m"
+            else:
+                hours = interval // 3600
+                interval_text = f"⏱️ Update: {hours}h"
+                
+            self.update_interval_label.setText(interval_text)
+            
+        except Exception as e:
+            EventLog.emit("ERROR", f"Failed to update status labels: {e}")
+            
+    def trigger_live_update(self):
+        """Trigger an immediate live data update"""
+        try:
+            if not self.enterprise_params.get('live_mode', False):
+                EventLog.emit("WARNING", "Live mode is disabled")
+                return
+                
+            # Get current ticker(s)
+            tickers = self.ticker_input.text().strip().split(',')
+            if not tickers or not tickers[0]:
+                EventLog.emit("WARNING", "No ticker specified for live update")
+                return
+                
+            EventLog.emit("INFO", f"Triggering live update for: {', '.join(tickers)}")
+            
+            # Update chart with latest data
+            self.refresh_chart()
+            
+            # If auto-analysis is enabled, trigger analysis
+            if self.enterprise_params.get('auto_refresh', True):
+                self.start_analysis()
+                
+        except Exception as e:
+            EventLog.emit("ERROR", f"Live update failed: {e}")
+            
+    def get_enterprise_date_range(self):
+        """Get the current enterprise date range for data fetching"""
+        try:
+            start_date = self.enterprise_params['start_date']
+            end_date = self.enterprise_params['end_date']
+            
+            # Format for API calls
+            return {
+                'start_date': start_date.strftime('%Y-%m-%d'),
+                'end_date': end_date.strftime('%Y-%m-%d'),
+                'start_datetime': start_date,
+                'end_datetime': end_date
+            }
+        except Exception as e:
+            EventLog.emit("ERROR", f"Failed to get enterprise date range: {e}")
+            # Fallback to default range
+            now = datetime.now()
+            return {
+                'start_date': (now - timedelta(days=365)).strftime('%Y-%m-%d'),
+                'end_date': now.strftime('%Y-%m-%d'),
+                'start_datetime': now - timedelta(days=365),
+                'end_datetime': now
+            }
 
 if __name__ == "__main__":
     print("INFO: Launching The Shnifter Trader GUI...")

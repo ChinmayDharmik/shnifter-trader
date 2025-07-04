@@ -942,3 +942,112 @@
 {"timestamp": "2025-07-04T16:40:59", "level": "INFO", "message": "User selected LLM model: "}
 {"timestamp": "2025-07-04T16:40:59", "level": "INFO", "message": "User selected LLM model: 🕒 llama3:8b"}
 {"timestamp": "2025-07-04T16:41:03", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T16:54:04", "level": "INFO", "message": "ShnifterDataManager initialized"}
+{"timestamp": "2025-07-04T16:54:04", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T16:54:07", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T16:54:07", "level": "INFO", "message": "User selected LLM model: "}
+{"timestamp": "2025-07-04T16:54:07", "level": "INFO", "message": "User selected LLM model: 🕒 llama3:8b"}
+{"timestamp": "2025-07-04T16:54:22", "level": "INFO", "message": "P&L Dashboard popout opened."}
+{"timestamp": "2025-07-04T16:54:24", "level": "INFO", "message": "Chart figure updated successfully"}
+{"timestamp": "2025-07-04T16:54:24", "level": "INFO", "message": "PnL Dashboard connected to real data manager"}
+{"timestamp": "2025-07-04T16:54:27", "level": "INFO", "message": "Chart figure updated successfully"}
+{"timestamp": "2025-07-04T16:54:32", "level": "INFO", "message": "Chart figure updated successfully"}
+{"timestamp": "2025-07-04T16:54:35", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T16:54:35", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T16:54:35", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x2280e740c60) at 0x000002280C9985C0> removed from tracking list."}
+{"timestamp": "2025-07-04T16:54:37", "level": "INFO", "message": "Chart figure updated successfully"}
+{"timestamp": "2025-07-04T16:54:42", "level": "INFO", "message": "Chart figure updated successfully"}
+{"timestamp": "2025-07-04T16:54:47", "level": "INFO", "message": "Chart figure updated successfully"}
+{"timestamp": "2025-07-04T16:54:52", "level": "INFO", "message": "Chart figure updated successfully"}
+{"timestamp": "2025-07-04T16:54:53", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T16:55:04", "level": "INFO", "message": "ShnifterDataManager initialized"}
+{"timestamp": "2025-07-04T16:55:05", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T18:38:56", "level": "INFO", "message": "ShnifterDataManager initialized"}
+{"timestamp": "2025-07-04T18:38:56", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T18:38:58", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T18:38:59", "level": "INFO", "message": "User selected LLM model: "}
+{"timestamp": "2025-07-04T18:38:59", "level": "INFO", "message": "User selected LLM model: 🕒 llama3:8b"}
+{"timestamp": "2025-07-04T18:39:01", "level": "INFO", "message": "Chart refreshed for SONY (1min granularity)"}
+{"timestamp": "2025-07-04T18:39:19", "level": "INFO", "message": "Triggering live update for: SONY"}
+{"timestamp": "2025-07-04T18:39:19", "level": "INFO", "message": "Chart refreshed for SONY (1min granularity)"}
+{"timestamp": "2025-07-04T18:39:19", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:39:20", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200aba674b0) at 0x00000200C5825E80> removed from tracking list."}
+{"timestamp": "2025-07-04T18:39:21", "level": "INFO", "message": "Enterprise parameters popout opened"}
+{"timestamp": "2025-07-04T18:39:46", "level": "INFO", "message": "Enterprise parameters updated: Live=True, Interval=10.0s"}
+{"timestamp": "2025-07-04T18:39:48", "level": "INFO", "message": "Triggering live update for: SONY"}
+{"timestamp": "2025-07-04T18:39:48", "level": "INFO", "message": "Chart refreshed for SONY (1min granularity)"}
+{"timestamp": "2025-07-04T18:39:49", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:39:49", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200ac2db610) at 0x00000200C57837C0> removed from tracking list."}
+{"timestamp": "2025-07-04T18:39:53", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:39:53", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:39:53", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200ac2dcb90) at 0x00000200C2CD2700> removed from tracking list."}
+{"timestamp": "2025-07-04T18:39:56", "level": "INFO", "message": "Triggering live update for: SONY"}
+{"timestamp": "2025-07-04T18:39:56", "level": "INFO", "message": "Chart refreshed for SONY (1min granularity)"}
+{"timestamp": "2025-07-04T18:39:56", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:39:57", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200ab732810) at 0x00000200C5784C00> removed from tracking list."}
+{"timestamp": "2025-07-04T18:40:02", "level": "INFO", "message": "User started backtest."}
+{"timestamp": "2025-07-04T18:40:02", "level": "INFO", "message": "Backtest requested for: SONY. Starting worker..."}
+{"timestamp": "2025-07-04T18:40:02", "level": "INFO", "message": "Starting backtest in background..."}
+{"timestamp": "2025-07-04T18:40:02", "level": "INFO", "message": "Backtest for SONY (yfinance): PnL=$0.00, Win Rate=0.0%, Trades=0"}
+{"timestamp": "2025-07-04T18:40:02", "level": "INFO", "message": "Background backtest completed."}
+{"timestamp": "2025-07-04T18:40:02", "level": "INFO", "message": "Backtest worker finished. Results received."}
+{"timestamp": "2025-07-04T18:40:02", "level": "DEBUG", "message": "Backtest worker <__main__.BacktestWorker(0x200ab732910) at 0x00000200C57E05C0> removed from tracking list."}
+{"timestamp": "2025-07-04T18:40:06", "level": "INFO", "message": "Triggering live update for: SONY"}
+{"timestamp": "2025-07-04T18:40:06", "level": "INFO", "message": "Chart refreshed for SONY (1min granularity)"}
+{"timestamp": "2025-07-04T18:40:06", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:40:07", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200c613dff0) at 0x00000200C5EC3D00> removed from tracking list."}
+{"timestamp": "2025-07-04T18:40:12", "level": "INFO", "message": "Enterprise parameters popout opened"}
+{"timestamp": "2025-07-04T18:40:16", "level": "INFO", "message": "Triggering live update for: SONY"}
+{"timestamp": "2025-07-04T18:40:16", "level": "INFO", "message": "Chart refreshed for SONY (1min granularity)"}
+{"timestamp": "2025-07-04T18:40:16", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:40:17", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200aba85f60) at 0x00000200C5786C40> removed from tracking list."}
+{"timestamp": "2025-07-04T18:40:26", "level": "INFO", "message": "Triggering live update for: SONY"}
+{"timestamp": "2025-07-04T18:40:26", "level": "INFO", "message": "Chart refreshed for SONY (1min granularity)"}
+{"timestamp": "2025-07-04T18:40:26", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:40:27", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200aba851e0) at 0x00000200C5EFC6C0> removed from tracking list."}
+{"timestamp": "2025-07-04T18:40:36", "level": "INFO", "message": "Triggering live update for: SONY"}
+{"timestamp": "2025-07-04T18:40:36", "level": "INFO", "message": "Chart refreshed for SONY (1min granularity)"}
+{"timestamp": "2025-07-04T18:40:36", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:40:37", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200dda9b080) at 0x00000200C5780600> removed from tracking list."}
+{"timestamp": "2025-07-04T18:40:42", "level": "INFO", "message": "Chart refreshed for NVDA (1min granularity)"}
+{"timestamp": "2025-07-04T18:40:46", "level": "INFO", "message": "Triggering live update for: nvda"}
+{"timestamp": "2025-07-04T18:40:46", "level": "INFO", "message": "Chart refreshed for NVDA (1min granularity)"}
+{"timestamp": "2025-07-04T18:40:46", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:40:47", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200a7806f80) at 0x00000200C56E4400> removed from tracking list."}
+{"timestamp": "2025-07-04T18:40:53", "level": "INFO", "message": "Event Log popout opened."}
+{"timestamp": "2025-07-04T18:40:56", "level": "INFO", "message": "Triggering live update for: nvda"}
+{"timestamp": "2025-07-04T18:40:56", "level": "INFO", "message": "Chart refreshed for NVDA (1min granularity)"}
+{"timestamp": "2025-07-04T18:40:56", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:40:57", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200c66aca90) at 0x00000200C5886B80> removed from tracking list."}
+{"timestamp": "2025-07-04T18:40:58", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:40:58", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:40:58", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200c66acc10) at 0x00000200C5873140> removed from tracking list."}
+{"timestamp": "2025-07-04T18:41:06", "level": "INFO", "message": "Triggering live update for: nvda"}
+{"timestamp": "2025-07-04T18:41:06", "level": "INFO", "message": "Chart refreshed for NVDA (1min granularity)"}
+{"timestamp": "2025-07-04T18:41:06", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:41:07", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200c66fb530) at 0x00000200C7113D00> removed from tracking list."}
+{"timestamp": "2025-07-04T18:41:08", "level": "INFO", "message": "Enterprise parameters popout opened"}
+{"timestamp": "2025-07-04T18:41:13", "level": "INFO", "message": "Enterprise parameters updated: Live=True, Interval=10.0s"}
+{"timestamp": "2025-07-04T18:41:18", "level": "INFO", "message": "Enterprise parameters updated: Live=True, Interval=10.0s"}
+{"timestamp": "2025-07-04T18:41:23", "level": "INFO", "message": "Enterprise parameters updated: Live=True, Interval=10.0s"}
+{"timestamp": "2025-07-04T18:41:26", "level": "INFO", "message": "Chart refreshed for NVDA (1min granularity)"}
+{"timestamp": "2025-07-04T18:41:33", "level": "INFO", "message": "Triggering live update for: nvda"}
+{"timestamp": "2025-07-04T18:41:33", "level": "INFO", "message": "Chart refreshed for NVDA (1min granularity)"}
+{"timestamp": "2025-07-04T18:41:33", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:41:33", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200c613e610) at 0x00000200C5EFCAC0> removed from tracking list."}
+{"timestamp": "2025-07-04T18:41:37", "level": "INFO", "message": "Triggering live update for: nvda"}
+{"timestamp": "2025-07-04T18:41:37", "level": "INFO", "message": "Chart refreshed for NVDA (1min granularity)"}
+{"timestamp": "2025-07-04T18:41:37", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:41:37", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200c66ebb00) at 0x00000200C583E580> removed from tracking list."}
+{"timestamp": "2025-07-04T18:41:39", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:41:39", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:41:39", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200c66acb50) at 0x00000200C5884080> removed from tracking list."}
+{"timestamp": "2025-07-04T18:41:43", "level": "INFO", "message": "Triggering live update for: nvda"}
+{"timestamp": "2025-07-04T18:41:43", "level": "INFO", "message": "Chart refreshed for NVDA (1min granularity)"}
+{"timestamp": "2025-07-04T18:41:43", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:41:43", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200c66b2930) at 0x00000200C5EC3D00> removed from tracking list."}
+{"timestamp": "2025-07-04T18:41:53", "level": "INFO", "message": "Triggering live update for: nvda"}
+{"timestamp": "2025-07-04T18:41:53", "level": "INFO", "message": "Chart refreshed for NVDA (1min granularity)"}
+{"timestamp": "2025-07-04T18:41:53", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T18:41:53", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x200c66b3550) at 0x00000200C5824980> removed from tracking list."}
+{"timestamp": "2025-07-04T18:41:57", "level": "INFO", "message": "Application closing."}
