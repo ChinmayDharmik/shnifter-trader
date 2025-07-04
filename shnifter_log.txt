@@ -1,80 +1,938 @@
-[2025-07-02T23:57:38] [INFO] Launching The Shnifter Trader GUI...
-[2025-07-02T23:58:22] [INFO] Backtest started.
-[2025-07-02T23:58:22] [WARNING] Invalid providers argument (False), using default provider list.
-[2025-07-02T23:58:36] [INFO] Backtest for SONY (YFinance (default)): PnL=7.28, Win Rate=58.4%, Trades=0
-[2025-07-02T23:58:36] [INFO] Backtest completed.
-[2025-07-02T23:59:00] [INFO] Backtest started.
-[2025-07-02T23:59:00] [WARNING] Invalid providers argument (False), using default provider list.
-[2025-07-02T23:59:13] [INFO] Backtest for SONY (YFinance (default)): PnL=18.31, Win Rate=48.8%, Trades=0
-[2025-07-02T23:59:28] [INFO] Backtest for NVDA (YFinance (default)): PnL=8.94, Win Rate=46.2%, Trades=0
-[2025-07-02T23:59:33] [INFO] Backtest completed.
-{"timestamp": "2025-07-02T23:59:45", "level": "INFO", "message": "Exporting last decisions to CSV."}
-{"timestamp": "2025-07-02T23:59:45", "level": "WARNING", "message": "No decisions to export."}
-{"timestamp": "2025-07-03T00:00:00", "level": "INFO", "message": "Start Analysis button clicked."}
-{"timestamp": "2025-07-03T00:00:00", "level": "INFO", "message": "Selected LLM model: qwen3:8b"}
-{"timestamp": "2025-07-03T00:00:00", "level": "DEBUG", "message": "User triggered analysis for: SONY"}
-{"timestamp": "2025-07-03T00:00:00", "level": "DEBUG", "message": "User triggered analysis for: NVDA"}
-{"timestamp": "2025-07-03T00:00:00", "level": "INFO", "message": "Started analysis for tickers: SONY, NVDA"}
-{"timestamp": "2025-07-03T00:00:00", "level": "INFO", "message": "Start Analysis button clicked."}
-{"timestamp": "2025-07-03T00:02:08", "level": "INFO", "message": "Launching The Shnifter Trader GUI..."}
-{"timestamp": "2025-07-03T00:02:20", "level": "INFO", "message": "Start Analysis button clicked."}
-{"timestamp": "2025-07-03T00:02:20", "level": "INFO", "message": "Selected LLM model: qwen3:8b"}
-{"timestamp": "2025-07-03T00:02:20", "level": "DEBUG", "message": "User triggered analysis for: SONY"}
-{"timestamp": "2025-07-03T00:02:20", "level": "INFO", "message": "Started analysis for tickers: SONY"}
-{"timestamp": "2025-07-03T00:02:20", "level": "INFO", "message": "Start Analysis button clicked."}
-{"timestamp": "2025-07-03T21:15:30", "level": "INFO", "message": "Launching The Shnifter Trader GUI..."}
-{"timestamp": "2025-07-03T21:15:58", "level": "INFO", "message": "Backtest started."}
-{"timestamp": "2025-07-03T21:15:58", "level": "WARNING", "message": "Invalid providers argument (False), using default provider list."}
-{"timestamp": "2025-07-03T21:16:11", "level": "INFO", "message": "Backtest for SONY (YFinance (default)): PnL=3.53, Win Rate=53.4%, Trades=0"}
-{"timestamp": "2025-07-03T21:16:24", "level": "INFO", "message": "Backtest for NVDA (YFinance (default)): PnL=13.08, Win Rate=65.3%, Trades=0"}
-{"timestamp": "2025-07-03T21:16:24", "level": "INFO", "message": "Backtest completed."}
-{"timestamp": "2025-07-03T21:19:29", "level": "INFO", "message": "Start Analysis button clicked."}
-{"timestamp": "2025-07-03T21:19:29", "level": "INFO", "message": "Selected LLM model: llama3:8b"}
-{"timestamp": "2025-07-03T21:19:29", "level": "DEBUG", "message": "User triggered analysis for: NVDA"}
-{"timestamp": "2025-07-03T21:19:29", "level": "INFO", "message": "Started analysis for tickers: NVDA"}
-{"timestamp": "2025-07-03T21:19:29", "level": "INFO", "message": "Start Analysis button clicked."}
-{"timestamp": "2025-07-03T21:19:29", "level": "WARNING", "message": "Analysis already in progress. Please wait for completion."}
-{"timestamp": "2025-07-03T21:19:29", "level": "DEBUG", "message": "Starting live data fetch and analysis for: NVDA"}
-{"timestamp": "2025-07-03T21:19:29", "level": "ERROR", "message": "An error occurred: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters."}
-{"timestamp": "2025-07-03T21:19:29", "level": "INFO", "message": "Analysis complete for: NVDA"}
-{"timestamp": "2025-07-03T21:19:29", "level": "ERROR", "message": "Analysis failed for: NVDA"}
-{"timestamp": "2025-07-03T21:19:29", "level": "DEBUG", "message": "Analysis thread completed and output delivered to GUI"}
-{"timestamp": "2025-07-03T21:19:29", "level": "DEBUG", "message": "All analysis workers completed. Button re-enabled."}
-{"timestamp": "2025-07-03T21:19:41", "level": "INFO", "message": "Start Analysis button clicked."}
-{"timestamp": "2025-07-03T21:19:41", "level": "INFO", "message": "Selected LLM model: qwen3:8b"}
-{"timestamp": "2025-07-03T21:19:41", "level": "DEBUG", "message": "User triggered analysis for: NVDA"}
-{"timestamp": "2025-07-03T21:19:41", "level": "INFO", "message": "Started analysis for tickers: NVDA"}
-{"timestamp": "2025-07-03T21:19:41", "level": "INFO", "message": "Start Analysis button clicked."}
-{"timestamp": "2025-07-03T21:19:41", "level": "WARNING", "message": "Analysis already in progress. Please wait for completion."}
-{"timestamp": "2025-07-03T21:19:41", "level": "DEBUG", "message": "Starting live data fetch and analysis for: NVDA"}
-{"timestamp": "2025-07-03T21:19:41", "level": "ERROR", "message": "An error occurred: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters."}
-{"timestamp": "2025-07-03T21:19:41", "level": "INFO", "message": "Analysis complete for: NVDA"}
-{"timestamp": "2025-07-03T21:19:41", "level": "ERROR", "message": "Analysis failed for: NVDA"}
-{"timestamp": "2025-07-03T21:19:41", "level": "DEBUG", "message": "Analysis thread completed and output delivered to GUI"}
-{"timestamp": "2025-07-03T21:19:41", "level": "DEBUG", "message": "All analysis workers completed. Button re-enabled."}
-{"timestamp": "2025-07-03T21:19:47", "level": "INFO", "message": "Application closing. Attempting to stop all analysis threads."}
-{"timestamp": "2025-07-03T21:19:47", "level": "INFO", "message": "All analysis threads stopped. Application closed."}
-{"timestamp": "2025-07-03T21:21:29", "level": "INFO", "message": "Launching The Shnifter Trader GUI..."}
-{"timestamp": "2025-07-03T21:22:12", "level": "INFO", "message": "Start Analysis button clicked."}
-{"timestamp": "2025-07-03T21:22:12", "level": "INFO", "message": "Selected LLM model: llama3:8b"}
-{"timestamp": "2025-07-03T21:22:12", "level": "DEBUG", "message": "User triggered analysis for: NVDA"}
-{"timestamp": "2025-07-03T21:22:12", "level": "INFO", "message": "Started analysis for tickers: NVDA"}
-{"timestamp": "2025-07-03T21:22:12", "level": "INFO", "message": "Start Analysis button clicked."}
-{"timestamp": "2025-07-03T21:22:12", "level": "WARNING", "message": "Analysis already in progress. Please wait for completion."}
-{"timestamp": "2025-07-03T21:22:12", "level": "DEBUG", "message": "Starting live data fetch and analysis for: NVDA"}
-{"timestamp": "2025-07-03T21:22:13", "level": "ERROR", "message": "An error occurred: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters."}
-{"timestamp": "2025-07-03T21:22:13", "level": "INFO", "message": "Analysis complete for: NVDA"}
-{"timestamp": "2025-07-03T21:22:13", "level": "ERROR", "message": "Analysis failed for: NVDA"}
-{"timestamp": "2025-07-03T21:22:13", "level": "DEBUG", "message": "Analysis thread completed and output delivered to GUI"}
-{"timestamp": "2025-07-03T21:22:13", "level": "DEBUG", "message": "All analysis workers completed. Button re-enabled."}
-{"timestamp": "2025-07-03T21:22:40", "level": "INFO", "message": "Backtest started."}
-{"timestamp": "2025-07-03T21:22:40", "level": "WARNING", "message": "Invalid providers argument (False), using default provider list."}
-{"timestamp": "2025-07-03T21:22:54", "level": "INFO", "message": "Backtest for NVDA (YFinance (default)): PnL=-2.91, Win Rate=60.0%, Trades=0"}
-{"timestamp": "2025-07-03T21:22:54", "level": "INFO", "message": "Backtest completed."}
-{"timestamp": "2025-07-03T21:23:08", "level": "INFO", "message": "Backtest started."}
-{"timestamp": "2025-07-03T21:23:08", "level": "WARNING", "message": "Invalid providers argument (False), using default provider list."}
-{"timestamp": "2025-07-03T21:23:21", "level": "INFO", "message": "Backtest for NVDA (YFinance (default)): PnL=-5.83, Win Rate=55.7%, Trades=0"}
-{"timestamp": "2025-07-03T21:23:34", "level": "INFO", "message": "Backtest for SONY (YFinance (default)): PnL=6.57, Win Rate=62.7%, Trades=0"}
-{"timestamp": "2025-07-03T21:23:35", "level": "INFO", "message": "Backtest completed."}
-{"timestamp": "2025-07-03T21:23:39", "level": "INFO", "message": "Application closing. Attempting to stop all analysis threads."}
-{"timestamp": "2025-07-03T21:23:39", "level": "INFO", "message": "All analysis threads stopped. Application closed."}
+{"timestamp": "2025-07-04T10:31:23", "level": "INFO", "message": "Dual-LLM mode enabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T10:31:23", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "Test info message"}
+{"timestamp": "2025-07-04T10:31:24", "level": "DEBUG", "message": "Should not appear"}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "Export test"}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "ProviderRegistry initialized."}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "Initialized provider: dummy"}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "Registered provider: dummy"}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "ProviderRegistry initialized."}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "Initialized provider: dummy"}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "Registered provider: dummy"}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "ProviderRegistry initialized."}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "Initialized provider: dummy"}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "Registered provider: dummy"}
+{"timestamp": "2025-07-04T10:31:24", "level": "INFO", "message": "Unregistered provider: dummy"}
+{"timestamp": "2025-07-04T10:31:24", "level": "ERROR", "message": "Provider not found: dummy"}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Dual-LLM mode enabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Test info message"}
+{"timestamp": "2025-07-04T10:31:45", "level": "DEBUG", "message": "Should not appear"}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Export test"}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "ProviderRegistry initialized."}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Initialized provider: dummy"}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Registered provider: dummy"}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "ProviderRegistry initialized."}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Initialized provider: dummy"}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Registered provider: dummy"}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "ProviderRegistry initialized."}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Initialized provider: dummy"}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Registered provider: dummy"}
+{"timestamp": "2025-07-04T10:31:45", "level": "INFO", "message": "Unregistered provider: dummy"}
+{"timestamp": "2025-07-04T10:31:45", "level": "ERROR", "message": "Provider not found: dummy"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_bd83d209"}
+{"timestamp": "2025-07-04T10:37:49", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T10:37:50", "level": "INFO", "message": "test_complete", "test": "table_widget_functionality", "status": "success", "data_rows": 3}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_49819b84"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T10:38:00", "level": "INFO", "message": "test_complete", "test": "table_widget_functionality", "status": "success", "data_rows": 3}
+{"timestamp": "2025-07-04T10:38:11.746490", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T10:38:11", "level": "INFO", "message": "test_complete", "test": "event_system_integration", "events_captured": 1}
+{"timestamp": "2025-07-04T10:38:11.752091", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T10:38:11", "level": "INFO", "message": "test_complete", "test": "shnifter_data_creation", "data_rows": 3}
+{"timestamp": "2025-07-04T10:38:11.756448", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T10:38:12", "level": "INFO", "message": "test_complete", "test": "widget_imports", "widgets_imported": ["ShnifterChartWidget", "ShnifterTableWidget"]}
+{"timestamp": "2025-07-04T10:40:24.758876", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T10:40:24.765715", "level": "INFO", "message": "wiring_complete", "components_wired": 19}
+{"timestamp": "2025-07-04T10:40:24", "level": "INFO", "message": "data_update_received", "symbol": "AAPL", "price": 150.0}
+{"timestamp": "2025-07-04T10:40:24.768134", "level": "INFO", "message": "widget_data_update", "routed_from": {"symbol": "AAPL", "price": 150.0}}
+{"timestamp": "2025-07-04T10:40:24.768532", "level": "INFO", "message": "analysis_request_received", "routed_from": {"symbol": "AAPL", "price": 150.0}}
+{"timestamp": "2025-07-04T10:40:24", "level": "INFO", "message": "widget_user_action", "action": "refresh", "widget_id": "test_widget"}
+{"timestamp": "2025-07-04T10:40:24.769523", "level": "INFO", "message": "analysis_request_received", "routed_from": {"action": "refresh", "widget_id": "test_widget"}}
+{"timestamp": "2025-07-04T10:40:24.769918", "level": "INFO", "message": "data_update_received", "routed_from": {"action": "refresh", "widget_id": "test_widget"}}
+{"timestamp": "2025-07-04T10:40:24.770312", "level": "INFO", "message": "widget_data_update", "routed_from": {"routed_from": {"action": "refresh", "widget_id": "test_widget"}, "timestamp": "2025-07-04T10:40:24.769918"}}
+{"timestamp": "2025-07-04T10:40:24.770720", "level": "INFO", "message": "analysis_request_received", "routed_from": {"routed_from": {"action": "refresh", "widget_id": "test_widget"}, "timestamp": "2025-07-04T10:40:24.769918"}}
+{"timestamp": "2025-07-04T10:40:24", "level": "INFO", "message": "analysis_complete", "analysis_type": "momentum", "signal": "BUY"}
+{"timestamp": "2025-07-04T10:40:24.771624", "level": "INFO", "message": "widget_data_update", "routed_from": {"analysis_type": "momentum", "signal": "BUY"}}
+{"timestamp": "2025-07-04T10:40:24.772058", "level": "INFO", "message": "llm_analysis_request", "routed_from": {"analysis_type": "momentum", "signal": "BUY"}}
+{"timestamp": "2025-07-04T10:40:24", "level": "INFO", "message": "test_start", "test_name": "event_wiring_test"}
+{"timestamp": "2025-07-04T10:41:41", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T10:41:43", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T10:42:21", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: llama3:8b, Verifier: qwen3:8b"}
+{"timestamp": "2025-07-04T10:42:25", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T10:42:25", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T10:42:26", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x16143376a60) at 0x0000016144665BC0> removed from tracking list."}
+{"timestamp": "2025-07-04T10:45:17", "level": "INFO", "message": "User started backtest."}
+{"timestamp": "2025-07-04T10:45:17", "level": "INFO", "message": "Backtest requested for: SONY. Starting worker..."}
+{"timestamp": "2025-07-04T10:45:17", "level": "INFO", "message": "Starting backtest in background..."}
+{"timestamp": "2025-07-04T10:45:17", "level": "ERROR", "message": "Error during background backtest: PriceRouter.historical() got an unexpected keyword argument 'provider'"}
+{"timestamp": "2025-07-04T10:45:17", "level": "INFO", "message": "Backtest worker finished. Results received."}
+{"timestamp": "2025-07-04T10:45:17", "level": "DEBUG", "message": "Backtest worker <__main__.BacktestWorker(0x16143372220) at 0x0000016146F23B00> removed from tracking list."}
+{"timestamp": "2025-07-04T10:45:51", "level": "INFO", "message": "User started backtest."}
+{"timestamp": "2025-07-04T10:45:51", "level": "INFO", "message": "Backtest requested for: SONY. Starting worker..."}
+{"timestamp": "2025-07-04T10:45:51", "level": "INFO", "message": "Starting backtest in background..."}
+{"timestamp": "2025-07-04T10:45:51", "level": "ERROR", "message": "Error during background backtest: PriceRouter.historical() got an unexpected keyword argument 'provider'"}
+{"timestamp": "2025-07-04T10:45:51", "level": "INFO", "message": "Backtest worker finished. Results received."}
+{"timestamp": "2025-07-04T10:45:51", "level": "DEBUG", "message": "Backtest worker <__main__.BacktestWorker(0x161433731c0) at 0x0000016146F2FA00> removed from tracking list."}
+{"timestamp": "2025-07-04T10:45:53", "level": "INFO", "message": "User triggered single LLM analysis."}
+{"timestamp": "2025-07-04T10:46:22", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T10:46:22", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T10:46:22", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x16143376780) at 0x0000016146FFA3C0> removed from tracking list."}
+{"timestamp": "2025-07-04T10:46:25", "level": "INFO", "message": "User triggered dual LLM analysis."}
+{"timestamp": "2025-07-04T10:46:39", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: qwen3:8b, Verifier: llama3:8b"}
+{"timestamp": "2025-07-04T10:46:41", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: qwen3:8b, Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T10:46:50", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T10:46:50", "level": "INFO", "message": "Dual-LLM mode set to True, Analyzer: qwen3:8b, Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T10:46:56", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T10:46:59", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T10:47:13", "level": "INFO", "message": "User triggered double-pass LLM analysis."}
+{"timestamp": "2025-07-04T10:47:34", "level": "INFO", "message": "Event Log popout opened."}
+{"timestamp": "2025-07-04T10:47:35", "level": "INFO", "message": "Smart Table popout opened."}
+{"timestamp": "2025-07-04T10:47:37", "level": "INFO", "message": "Advanced Charts popout opened."}
+{"timestamp": "2025-07-04T10:47:38", "level": "INFO", "message": "P&L Dashboard popout opened."}
+{"timestamp": "2025-07-04T10:47:57", "level": "INFO", "message": "User selected LLM model: qwen3:8b"}
+{"timestamp": "2025-07-04T10:47:58", "level": "INFO", "message": "User selected LLM model: llama2:latest"}
+{"timestamp": "2025-07-04T10:47:59", "level": "INFO", "message": "User selected LLM model: llama2:7b"}
+{"timestamp": "2025-07-04T10:48:00", "level": "INFO", "message": "User selected LLM model: gemma:2b"}
+{"timestamp": "2025-07-04T10:48:08", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T10:48:08", "level": "INFO", "message": "User selected LLM model: "}
+{"timestamp": "2025-07-04T10:48:08", "level": "INFO", "message": "User selected LLM model: llama3:8b"}
+{"timestamp": "2025-07-04T10:48:08", "level": "INFO", "message": "Ollama model dropdown refreshed."}
+{"timestamp": "2025-07-04T10:48:16", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T10:48:16", "level": "INFO", "message": "User selected LLM model: "}
+{"timestamp": "2025-07-04T10:48:16", "level": "INFO", "message": "User selected LLM model: llama3:8b"}
+{"timestamp": "2025-07-04T10:48:16", "level": "INFO", "message": "Ollama model dropdown refreshed."}
+{"timestamp": "2025-07-04T10:48:17", "level": "INFO", "message": "User selected LLM model: qwen3:8b"}
+{"timestamp": "2025-07-04T10:48:20", "level": "INFO", "message": "User triggered single LLM analysis."}
+{"timestamp": "2025-07-04T10:49:29", "level": "INFO", "message": "Advanced Charts popout opened."}
+{"timestamp": "2025-07-04T10:49:31", "level": "INFO", "message": "Smart Table popout opened."}
+{"timestamp": "2025-07-04T10:49:32", "level": "INFO", "message": "P&L Dashboard popout opened."}
+{"timestamp": "2025-07-04T10:49:34", "level": "INFO", "message": "P&L Dashboard popout opened."}
+{"timestamp": "2025-07-04T10:49:35", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_e1b59fae"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T10:54:28", "level": "INFO", "message": "test_complete", "test": "table_widget_functionality", "status": "success", "data_rows": 3}
+{"timestamp": "2025-07-04T10:55:30", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T10:55:32", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T10:55:39", "level": "INFO", "message": "Dual LLM for TEST: HOLD"}
+{"timestamp": "2025-07-04T10:55:39", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T10:55:39", "level": "INFO", "message": "Test message for lifecycle"}
+{"timestamp": "2025-07-04T10:56:27.850628", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T10:56:27", "level": "INFO", "message": "test_complete", "test": "event_system_integration", "events_captured": 1}
+{"timestamp": "2025-07-04T10:56:27.856273", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T10:56:27", "level": "INFO", "message": "test_complete", "test": "shnifter_data_creation", "data_rows": 3}
+{"timestamp": "2025-07-04T10:56:27.859877", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T10:56:28", "level": "INFO", "message": "test_complete", "test": "widget_imports", "widgets_imported": ["ShnifterChartWidget", "ShnifterTableWidget"]}
+{"timestamp": "2025-07-04T10:56:39", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T10:57:04", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T10:57:19", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T10:57:23", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T10:57:29", "level": "INFO", "message": "Dual LLM for TEST: HOLD"}
+{"timestamp": "2025-07-04T10:57:29", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T10:57:29", "level": "INFO", "message": "Test message for lifecycle"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "Dual-LLM mode enabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_start", "test": "event_system_end_to_end"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_complete", "test": "event_system_end_to_end", "status": "success", "events_captured": 1}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_start", "test": "popout_registry_integration"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_complete", "test": "popout_registry_integration", "status": "success", "registered_widgets_count": 0}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_3bb569ed"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T10:57:37", "level": "INFO", "message": "test_complete", "test": "table_widget_functionality", "status": "success", "data_rows": 3}
+{"timestamp": "2025-07-04T10:57:54", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T10:57:57", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T10:58:03", "level": "INFO", "message": "Dual LLM for TEST: HOLD"}
+{"timestamp": "2025-07-04T10:58:03", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T10:58:03", "level": "INFO", "message": "Test message for lifecycle"}
+{"timestamp": "2025-07-04T10:59:16", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T10:59:16", "level": "INFO", "message": "Shnifter Unittest Suite started"}
+{"timestamp": "2025-07-04T10:59:16", "level": "INFO", "message": "test_run_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T10:59:16", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T10:59:16", "level": "INFO", "message": "TestShnifterData.test_warning_on_missing_column started"}
+{"timestamp": "2025-07-04T10:59:16", "level": "ERROR", "message": "Shnifter Unittest Suite failed. Errors: 7, Failures: 0"}
+{"timestamp": "2025-07-04T11:00:30", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:00:30", "level": "INFO", "message": "Shnifter Unittest Suite started"}
+{"timestamp": "2025-07-04T11:00:30", "level": "INFO", "message": "test_run_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:00:30", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:00:30", "level": "INFO", "message": "TestShnifterData.test_warning_on_missing_column started"}
+{"timestamp": "2025-07-04T11:00:30", "level": "ERROR", "message": "Shnifter Unittest Suite failed. Errors: 7, Failures: 0"}
+{"timestamp": "2025-07-04T11:03:17", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:03:17", "level": "INFO", "message": "Shnifter Unittest Suite started"}
+{"timestamp": "2025-07-04T11:03:17", "level": "INFO", "message": "test_run_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:03:17", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:03:17", "level": "INFO", "message": "TestShnifterData.test_warning_on_missing_column started"}
+{"timestamp": "2025-07-04T11:03:17", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_warning_on_missing_column"}
+{"timestamp": "2025-07-04T11:03:17", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T11:03:19", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T11:03:19", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T11:03:19", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T11:03:19", "level": "INFO", "message": "test_run_start", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T11:03:19", "level": "INFO", "message": "test_run_success", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T11:03:19", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T11:03:19", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T11:03:19", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T11:03:19", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T11:03:19", "level": "ERROR", "message": "Shnifter Unittest Suite failed. Errors: 1, Failures: 0"}
+{"timestamp": "2025-07-04T11:03:50", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:03:56", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:03:56", "level": "INFO", "message": "Shnifter Unittest Suite started"}
+{"timestamp": "2025-07-04T11:03:56", "level": "INFO", "message": "test_run_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:03:56", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:03:56", "level": "INFO", "message": "TestShnifterData.test_warning_on_missing_column started"}
+{"timestamp": "2025-07-04T11:03:56", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_warning_on_missing_column"}
+{"timestamp": "2025-07-04T11:03:56", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T11:03:57", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T11:03:57", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T11:03:57", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T11:03:57", "level": "INFO", "message": "test_run_start", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T11:03:57", "level": "INFO", "message": "test_run_success", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T11:03:57", "level": "INFO", "message": "test_run_start", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T11:03:58", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T11:03:58", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T11:03:58", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T11:03:58", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T11:03:58", "level": "ERROR", "message": "Shnifter Unittest Suite failed. Errors: 1, Failures: 0"}
+{"timestamp": "2025-07-04T11:04:05", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:04:08", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T11:04:15", "level": "INFO", "message": "Dual LLM for TEST: HOLD"}
+{"timestamp": "2025-07-04T11:04:15", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T11:04:15", "level": "INFO", "message": "Test message for lifecycle"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "Dual-LLM mode enabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_start", "test": "event_system_end_to_end"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_complete", "test": "event_system_end_to_end", "status": "success", "events_captured": 1}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_start", "test": "popout_registry_integration"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_complete", "test": "popout_registry_integration", "status": "success", "registered_widgets_count": 0}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_e8837130"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T11:04:23", "level": "INFO", "message": "test_complete", "test": "table_widget_functionality", "status": "success", "data_rows": 3}
+{"timestamp": "2025-07-04T11:04:27.151263", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T11:04:27", "level": "INFO", "message": "test_complete", "test": "event_system_integration", "events_captured": 1}
+{"timestamp": "2025-07-04T11:04:27.157126", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T11:04:27", "level": "INFO", "message": "test_complete", "test": "shnifter_data_creation", "data_rows": 3}
+{"timestamp": "2025-07-04T11:04:27.160586", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T11:04:27", "level": "INFO", "message": "test_complete", "test": "widget_imports", "widgets_imported": ["ShnifterChartWidget", "ShnifterTableWidget"]}
+{"timestamp": "2025-07-04T11:04:39", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:04:39", "level": "INFO", "message": "Shnifter Unittest Suite started"}
+{"timestamp": "2025-07-04T11:04:39", "level": "INFO", "message": "test_run_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:04:39", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:04:39", "level": "INFO", "message": "TestShnifterData.test_warning_on_missing_column started"}
+{"timestamp": "2025-07-04T11:04:39", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_warning_on_missing_column"}
+{"timestamp": "2025-07-04T11:04:39", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T11:04:40", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T11:04:40", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T11:04:41", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T11:04:41", "level": "INFO", "message": "test_run_start", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T11:04:41", "level": "INFO", "message": "test_run_success", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T11:04:41", "level": "INFO", "message": "test_run_start", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T11:04:42", "level": "INFO", "message": "test_run_success", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T11:04:42", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T11:04:42", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T11:04:42", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T11:04:42", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T11:04:42", "level": "INFO", "message": "Shnifter Unittest Suite passed"}
+{"timestamp": "2025-07-04T11:05:56", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:05:56", "level": "INFO", "message": "Shnifter Unittest Suite started"}
+{"timestamp": "2025-07-04T11:05:56", "level": "INFO", "message": "test_run_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:05:56", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:05:56", "level": "INFO", "message": "TestShnifterData.test_warning_on_missing_column started"}
+{"timestamp": "2025-07-04T11:05:56", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_warning_on_missing_column"}
+{"timestamp": "2025-07-04T11:05:56", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T11:05:57", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T11:05:57", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T11:05:57", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T11:05:57", "level": "INFO", "message": "test_run_start", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T11:05:57", "level": "INFO", "message": "test_run_success", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T11:05:57", "level": "INFO", "message": "test_run_start", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T11:05:58", "level": "INFO", "message": "test_run_success", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T11:05:58", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T11:05:58", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T11:05:58", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T11:05:58", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T11:05:58", "level": "INFO", "message": "Shnifter Unittest Suite passed"}
+{"timestamp": "2025-07-04T11:06:09", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:06:11", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T11:06:18", "level": "INFO", "message": "User started backtest."}
+{"timestamp": "2025-07-04T11:06:18", "level": "INFO", "message": "Backtest requested for: SONY. Starting worker..."}
+{"timestamp": "2025-07-04T11:06:18", "level": "INFO", "message": "Starting backtest in background..."}
+{"timestamp": "2025-07-04T11:06:20", "level": "INFO", "message": "Backtest for SONY (yfinance): PnL=-15.65, Win Rate=56.7%, Trades=80"}
+{"timestamp": "2025-07-04T11:06:20", "level": "INFO", "message": "Background backtest completed."}
+{"timestamp": "2025-07-04T11:06:20", "level": "INFO", "message": "Backtest worker finished. Results received."}
+{"timestamp": "2025-07-04T11:06:20", "level": "DEBUG", "message": "Backtest worker <__main__.BacktestWorker(0x1f74df73180) at 0x000001F76B18BC00> removed from tracking list."}
+{"timestamp": "2025-07-04T11:06:35", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: qwen3:8b, Verifier: llama3:8b"}
+{"timestamp": "2025-07-04T11:06:36", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: qwen3:8b, Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T11:06:52", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T11:06:52", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T11:06:52", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x1f74d8ef1d0) at 0x000001F76B127C00> removed from tracking list."}
+{"timestamp": "2025-07-04T11:07:08", "level": "INFO", "message": "Event Log popout opened."}
+{"timestamp": "2025-07-04T11:07:10", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T11:07:10", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T11:07:10", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x1f751761210) at 0x000001F7513ED300> removed from tracking list."}
+{"timestamp": "2025-07-04T11:07:16", "level": "INFO", "message": "Event Log popout opened."}
+{"timestamp": "2025-07-04T11:07:18", "level": "INFO", "message": "Smart Table popout opened."}
+{"timestamp": "2025-07-04T11:07:19", "level": "INFO", "message": "Advanced Charts popout opened."}
+{"timestamp": "2025-07-04T11:07:20", "level": "INFO", "message": "P&L Dashboard popout opened."}
+{"timestamp": "2025-07-04T11:07:25", "level": "INFO", "message": "User triggered double-pass LLM analysis."}
+{"timestamp": "2025-07-04T11:08:01", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T11:08:01", "level": "INFO", "message": "Dual-LLM mode set to True, Analyzer: llama3:8b, Verifier: llama3:8b"}
+{"timestamp": "2025-07-04T11:08:05", "level": "INFO", "message": "Dual-LLM mode set to True, Analyzer: gemma:2b, Verifier: llama3:8b"}
+{"timestamp": "2025-07-04T11:08:10", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T11:08:13", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T11:08:21", "level": "INFO", "message": "User triggered dual LLM analysis."}
+{"timestamp": "2025-07-04T11:08:32", "level": "INFO", "message": "Event Log popout opened."}
+{"timestamp": "2025-07-04T11:08:36", "level": "INFO", "message": "Smart Table popout opened."}
+{"timestamp": "2025-07-04T11:08:37", "level": "INFO", "message": "Smart Table popout opened."}
+{"timestamp": "2025-07-04T11:08:38", "level": "INFO", "message": "Event Log popout opened."}
+{"timestamp": "2025-07-04T11:08:39", "level": "INFO", "message": "Advanced Charts popout opened."}
+{"timestamp": "2025-07-04T11:08:40", "level": "INFO", "message": "P&L Dashboard popout opened."}
+{"timestamp": "2025-07-04T11:08:43", "level": "INFO", "message": "User started backtest."}
+{"timestamp": "2025-07-04T11:08:43", "level": "INFO", "message": "Backtest requested for: NVDA. Starting worker..."}
+{"timestamp": "2025-07-04T11:08:43", "level": "INFO", "message": "Starting backtest in background..."}
+{"timestamp": "2025-07-04T11:08:45", "level": "INFO", "message": "Backtest for NVDA (yfinance): PnL=48.83, Win Rate=57.7%, Trades=106"}
+{"timestamp": "2025-07-04T11:08:45", "level": "INFO", "message": "Background backtest completed."}
+{"timestamp": "2025-07-04T11:08:45", "level": "INFO", "message": "Backtest worker finished. Results received."}
+{"timestamp": "2025-07-04T11:08:45", "level": "DEBUG", "message": "Backtest worker <__main__.BacktestWorker(0x1f751e4fab0) at 0x000001F752A59CC0> removed from tracking list."}
+{"timestamp": "2025-07-04T11:09:20", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T11:28:15", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:29:40", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:29:49", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:30:00", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:30:14", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:30:14", "level": "INFO", "message": "Shnifter Unittest Suite started"}
+{"timestamp": "2025-07-04T11:30:14", "level": "INFO", "message": "test_run_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:30:14", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:30:14", "level": "INFO", "message": "TestShnifterData.test_warning_on_missing_column started"}
+{"timestamp": "2025-07-04T11:30:14", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_warning_on_missing_column"}
+{"timestamp": "2025-07-04T11:30:14", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T11:30:16", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T11:30:16", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T11:30:17", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T11:30:17", "level": "INFO", "message": "test_run_start", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T11:30:17", "level": "INFO", "message": "test_run_success", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T11:30:17", "level": "INFO", "message": "test_run_start", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T11:30:17", "level": "INFO", "message": "test_run_success", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T11:30:17", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T11:30:17", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T11:30:17", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T11:30:17", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T11:30:17", "level": "INFO", "message": "Shnifter Unittest Suite passed"}
+{"timestamp": "2025-07-04T11:30:27", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:31:24", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:31:38", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:31:40", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T11:31:47", "level": "INFO", "message": "Dual LLM for TEST: HOLD"}
+{"timestamp": "2025-07-04T11:31:47", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T11:31:47", "level": "INFO", "message": "Test message for lifecycle"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "Dual-LLM mode enabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_start", "test": "event_system_end_to_end"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_complete", "test": "event_system_end_to_end", "status": "success", "events_captured": 1}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_start", "test": "popout_registry_integration"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_complete", "test": "popout_registry_integration", "status": "success", "registered_widgets_count": 0}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_0091b5e6"}
+{"timestamp": "2025-07-04T11:31:55", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T11:31:56", "level": "INFO", "message": "test_complete", "test": "table_widget_functionality", "status": "success", "data_rows": 3}
+{"timestamp": "2025-07-04T11:32:50", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T11:32:52", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T11:32:59", "level": "INFO", "message": "User started backtest."}
+{"timestamp": "2025-07-04T11:32:59", "level": "INFO", "message": "Backtest requested for: SONY. Starting worker..."}
+{"timestamp": "2025-07-04T11:32:59", "level": "INFO", "message": "Starting backtest in background..."}
+{"timestamp": "2025-07-04T11:32:59", "level": "ERROR", "message": "Error during background backtest: 'YFinanceProvider' object has no attribute 'get_historical_data'"}
+{"timestamp": "2025-07-04T11:32:59", "level": "INFO", "message": "Backtest worker finished. Results received."}
+{"timestamp": "2025-07-04T11:32:59", "level": "DEBUG", "message": "Backtest worker <__main__.BacktestWorker(0x16a34c97010) at 0x0000016A38412440> removed from tracking list."}
+{"timestamp": "2025-07-04T11:33:33", "level": "INFO", "message": "Event Log popout opened."}
+{"timestamp": "2025-07-04T11:33:34", "level": "INFO", "message": "Smart Table popout opened."}
+{"timestamp": "2025-07-04T11:33:36", "level": "INFO", "message": "P&L Dashboard popout opened."}
+{"timestamp": "2025-07-04T11:33:52", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T12:13:12", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T12:13:16", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T12:13:16", "level": "INFO", "message": "Shnifter Unittest Suite started"}
+{"timestamp": "2025-07-04T12:13:16", "level": "INFO", "message": "test_run_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T12:13:16", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T12:13:16", "level": "INFO", "message": "TestShnifterData.test_warning_on_missing_column started"}
+{"timestamp": "2025-07-04T12:13:16", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_warning_on_missing_column"}
+{"timestamp": "2025-07-04T12:13:16", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T12:13:17", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T12:13:17", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T12:13:17", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T12:13:17", "level": "INFO", "message": "test_run_start", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T12:13:17", "level": "INFO", "message": "test_run_success", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T12:13:17", "level": "INFO", "message": "test_run_start", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T12:13:18", "level": "INFO", "message": "test_run_success", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T12:13:18", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T12:13:18", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T12:13:18", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T12:13:18", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T12:13:18", "level": "INFO", "message": "Shnifter Unittest Suite passed"}
+{"timestamp": "2025-07-04T12:13:22", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T12:13:25", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T12:13:31", "level": "INFO", "message": "Dual LLM for TEST: HOLD"}
+{"timestamp": "2025-07-04T12:13:31", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T12:13:31", "level": "INFO", "message": "Test message for lifecycle"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "Dual-LLM mode enabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_start", "test": "event_system_end_to_end"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_complete", "test": "event_system_end_to_end", "status": "success", "events_captured": 1}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_start", "test": "popout_registry_integration"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_complete", "test": "popout_registry_integration", "status": "success", "registered_widgets_count": 0}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_0b42a4a5"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T12:13:39", "level": "INFO", "message": "test_complete", "test": "table_widget_functionality", "status": "success", "data_rows": 3}
+{"timestamp": "2025-07-04T12:13:44.311602", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T12:13:44", "level": "INFO", "message": "test_complete", "test": "event_system_integration", "events_captured": 1}
+{"timestamp": "2025-07-04T12:13:44.318305", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T12:13:44", "level": "INFO", "message": "test_complete", "test": "shnifter_data_creation", "data_rows": 3}
+{"timestamp": "2025-07-04T12:13:44.322630", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T12:13:44", "level": "INFO", "message": "test_complete", "test": "widget_imports", "widgets_imported": ["ShnifterChartWidget", "ShnifterTableWidget"]}
+{"timestamp": "2025-07-04T12:43:35.510884", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T12:43:35", "level": "INFO", "message": "test_complete", "test": "event_system_integration", "events_captured": 1}
+{"timestamp": "2025-07-04T12:43:35.516810", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T12:43:35", "level": "INFO", "message": "test_complete", "test": "shnifter_data_creation", "data_rows": 3}
+{"timestamp": "2025-07-04T12:43:35.521074", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T12:43:35", "level": "INFO", "message": "test_complete", "test": "widget_imports", "widgets_imported": ["ShnifterChartWidget", "ShnifterTableWidget"]}
+{"timestamp": "2025-07-04T12:43:47", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T12:43:50", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T12:43:56", "level": "INFO", "message": "Dual LLM for TEST: HOLD"}
+{"timestamp": "2025-07-04T12:43:56", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T12:43:56", "level": "INFO", "message": "Test message for lifecycle"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "Dual-LLM mode enabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_start", "test": "event_system_end_to_end"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_complete", "test": "event_system_end_to_end", "status": "success", "events_captured": 1}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_start", "test": "popout_registry_integration"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_complete", "test": "popout_registry_integration", "status": "success", "registered_widgets_count": 0}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_8b318dbc"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T12:44:04", "level": "INFO", "message": "test_complete", "test": "table_widget_functionality", "status": "success", "data_rows": 3}
+{"timestamp": "2025-07-04T12:44:10", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T12:44:10", "level": "INFO", "message": "Shnifter Unittest Suite started"}
+{"timestamp": "2025-07-04T12:44:10", "level": "INFO", "message": "test_run_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T12:44:10", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T12:44:10", "level": "INFO", "message": "TestShnifterData.test_warning_on_missing_column started"}
+{"timestamp": "2025-07-04T12:44:10", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_warning_on_missing_column"}
+{"timestamp": "2025-07-04T12:44:10", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T12:44:11", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T12:44:11", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T12:44:11", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T12:44:11", "level": "INFO", "message": "test_run_start", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T12:44:11", "level": "INFO", "message": "test_run_success", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T12:44:11", "level": "INFO", "message": "test_run_start", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T12:44:12", "level": "INFO", "message": "test_run_success", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T12:44:12", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T12:44:12", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T12:44:12", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T12:44:12", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T12:44:12", "level": "INFO", "message": "Shnifter Unittest Suite passed"}
+{"timestamp": "2025-07-04T12:44:15", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T13:17:20", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T13:17:22", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T13:17:22", "level": "INFO", "message": "User selected LLM model: "}
+{"timestamp": "2025-07-04T13:17:22", "level": "INFO", "message": "User selected LLM model: 🕒 llama3:8b"}
+{"timestamp": "2025-07-04T13:18:38", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T13:18:38", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T13:18:39", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x11792bb9380) at 0x000001179797D2C0> removed from tracking list."}
+{"timestamp": "2025-07-04T13:18:51", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: , Verifier: llama3:8b"}
+{"timestamp": "2025-07-04T13:18:51", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 llama3:8b, Verifier: llama3:8b"}
+{"timestamp": "2025-07-04T13:18:51", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 llama3:8b, Verifier: "}
+{"timestamp": "2025-07-04T13:18:51", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 llama3:8b, Verifier: 🕒 llama3:8b"}
+{"timestamp": "2025-07-04T13:18:54", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 llama3:8b, Verifier: qwen3:8b"}
+{"timestamp": "2025-07-04T13:18:54", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 llama3:8b, Verifier: "}
+{"timestamp": "2025-07-04T13:18:54", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 llama3:8b, Verifier: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T13:18:57", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T13:18:57", "level": "INFO", "message": "Dual-LLM mode set to True, Analyzer: 🕒 llama3:8b, Verifier: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T13:19:02", "level": "INFO", "message": "User triggered dual LLM analysis."}
+{"timestamp": "2025-07-04T13:19:16", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T13:19:23", "level": "INFO", "message": "Dual LLM for NVDA: HOLD"}
+{"timestamp": "2025-07-04T13:19:23", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T13:19:29", "level": "INFO", "message": "Dual LLM for NVDA: HOLD"}
+{"timestamp": "2025-07-04T13:19:32", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T14:43:57.316929", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T14:43:57.332728", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T14:43:57", "level": "INFO", "message": "data_update_received", "symbol": "AAPL", "price": 150.0}
+{"timestamp": "2025-07-04T14:43:57.335377", "level": "INFO", "message": "widget_data_update", "routed_from": {"symbol": "AAPL", "price": 150.0}}
+{"timestamp": "2025-07-04T14:43:57.335810", "level": "INFO", "message": "analysis_request_received", "routed_from": {"symbol": "AAPL", "price": 150.0}}
+{"timestamp": "2025-07-04T14:43:57", "level": "INFO", "message": "widget_user_action", "action": "refresh", "widget_id": "test_widget"}
+{"timestamp": "2025-07-04T14:43:57.336728", "level": "INFO", "message": "analysis_request_received", "routed_from": {"action": "refresh", "widget_id": "test_widget"}}
+{"timestamp": "2025-07-04T14:43:57.337127", "level": "INFO", "message": "data_update_received", "routed_from": {"action": "refresh", "widget_id": "test_widget"}}
+{"timestamp": "2025-07-04T14:43:57.337519", "level": "INFO", "message": "widget_data_update", "routed_from": {"routed_from": {"action": "refresh", "widget_id": "test_widget"}, "timestamp": "2025-07-04T14:43:57.337127"}}
+{"timestamp": "2025-07-04T14:43:57.337909", "level": "INFO", "message": "analysis_request_received", "routed_from": {"routed_from": {"action": "refresh", "widget_id": "test_widget"}, "timestamp": "2025-07-04T14:43:57.337127"}}
+{"timestamp": "2025-07-04T14:43:57", "level": "INFO", "message": "analysis_complete", "analysis_type": "momentum", "signal": "BUY"}
+{"timestamp": "2025-07-04T14:43:57.338760", "level": "INFO", "message": "widget_data_update", "routed_from": {"analysis_type": "momentum", "signal": "BUY"}}
+{"timestamp": "2025-07-04T14:43:57.339130", "level": "INFO", "message": "llm_analysis_request", "routed_from": {"analysis_type": "momentum", "signal": "BUY"}}
+{"timestamp": "2025-07-04T14:43:57", "level": "INFO", "message": "test_start", "test_name": "event_wiring_test"}
+{"timestamp": "2025-07-04T14:43:57", "level": "INFO", "message": "platform_standardization_request", "symbols": ["AAPL", "MSFT"]}
+{"timestamp": "2025-07-04T14:43:57", "level": "INFO", "message": "portfolio_optimization_request", "risk_tolerance": "moderate"}
+{"timestamp": "2025-07-04T14:43:57", "level": "INFO", "message": "autogen_agents_request", "trading_strategy": "momentum"}
+{"timestamp": "2025-07-04T14:43:57", "level": "INFO", "message": "backtesting_momentum_request", "timeframe": "1year"}
+{"timestamp": "2025-07-04T14:43:57", "level": "INFO", "message": "financial_statements_request", "symbol": "AAPL", "period": "quarterly"}
+{"timestamp": "2025-07-04T14:43:57", "level": "INFO", "message": "ethereum_analysis_request", "timeframe": "1month"}
+{"timestamp": "2025-07-04T14:44:06", "level": "INFO", "message": "ShnifterDataManager initialized"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "Test message for lifecycle"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_start", "test": "event_system_end_to_end"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_complete", "test": "event_system_end_to_end", "status": "success", "events_captured": 1}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_start", "test": "popout_registry_integration"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_complete", "test": "popout_registry_integration", "status": "success", "registered_widgets_count": 0}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_ae6dfbd2"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T14:44:14", "level": "WARNING", "message": "test_skip", "test": "table_widget_functionality", "reason": "Widget not available: No module named 'aiolimiter'"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "Test info message"}
+{"timestamp": "2025-07-04T14:44:14", "level": "DEBUG", "message": "Should not appear"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "Export test"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "ProviderRegistry initialized."}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "Initialized provider: dummy"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "Registered provider: dummy"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "ProviderRegistry initialized."}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "Initialized provider: dummy"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "Registered provider: dummy"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "ProviderRegistry initialized."}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "Initialized provider: dummy"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "Registered provider: dummy"}
+{"timestamp": "2025-07-04T14:44:14", "level": "INFO", "message": "Unregistered provider: dummy"}
+{"timestamp": "2025-07-04T14:44:14", "level": "ERROR", "message": "Provider not found: dummy"}
+{"timestamp": "2025-07-04T14:48:33", "level": "INFO", "message": "ShnifterDataManager initialized"}
+{"timestamp": "2025-07-04T14:48:33", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T14:48:36", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T14:48:36", "level": "INFO", "message": "User selected LLM model: "}
+{"timestamp": "2025-07-04T14:48:36", "level": "INFO", "message": "User selected LLM model: 🕒 llama3:8b"}
+{"timestamp": "2025-07-04T14:48:45", "level": "INFO", "message": "User started backtest."}
+{"timestamp": "2025-07-04T14:48:45", "level": "INFO", "message": "Backtest requested for: SONY. Starting worker..."}
+{"timestamp": "2025-07-04T14:48:45", "level": "INFO", "message": "Starting backtest in background..."}
+{"timestamp": "2025-07-04T14:48:47", "level": "INFO", "message": "Backtest for SONY (yfinance): PnL=32.83, Win Rate=45.7%, Trades=58"}
+{"timestamp": "2025-07-04T14:48:47", "level": "INFO", "message": "Background backtest completed."}
+{"timestamp": "2025-07-04T14:48:47", "level": "INFO", "message": "Backtest worker finished. Results received."}
+{"timestamp": "2025-07-04T14:48:47", "level": "DEBUG", "message": "Backtest worker <__main__.BacktestWorker(0x1961e5af4f0) at 0x000001965CC031C0> removed from tracking list."}
+{"timestamp": "2025-07-04T14:49:19", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T14:49:19", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T14:49:20", "level": "DEBUG", "message": "Analysis worker <__main__.AnalysisWorker(0x1961e04df30) at 0x000001965EE3F800> removed from tracking list."}
+{"timestamp": "2025-07-04T14:49:33", "level": "INFO", "message": "User triggered dual LLM analysis."}
+{"timestamp": "2025-07-04T14:49:56", "level": "INFO", "message": "Analyzer model changed to: 🕒 llama3:8b"}
+{"timestamp": "2025-07-04T14:49:56", "level": "INFO", "message": "Analyzer model changed to: llama3:8b"}
+{"timestamp": "2025-07-04T14:49:56", "level": "INFO", "message": "Loaded 5 LLM models successfully"}
+{"timestamp": "2025-07-04T14:49:56", "level": "INFO", "message": "LLM Manager connected to real data manager"}
+{"timestamp": "2025-07-04T14:49:59", "level": "INFO", "message": "Analyzer model changed to: "}
+{"timestamp": "2025-07-04T14:49:59", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: , Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T14:49:59", "level": "INFO", "message": "Analyzer model changed to: 🕒 llama3:8b"}
+{"timestamp": "2025-07-04T14:49:59", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 llama3:8b, Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T14:50:02", "level": "INFO", "message": "Analyzer model changed to: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T14:50:02", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 qwen3:8b, Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T14:50:02", "level": "INFO", "message": "Analyzer model changed to: "}
+{"timestamp": "2025-07-04T14:50:02", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: , Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T14:50:02", "level": "INFO", "message": "Analyzer model changed to: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T14:50:02", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 qwen3:8b, Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T14:50:07", "level": "INFO", "message": "LLM configuration saved"}
+{"timestamp": "2025-07-04T14:50:48", "level": "INFO", "message": "Analyzer model changed to: gemma:2b"}
+{"timestamp": "2025-07-04T14:50:48", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: gemma:2b, Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T14:50:48", "level": "INFO", "message": "Analyzer model changed to: "}
+{"timestamp": "2025-07-04T14:50:48", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: , Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T14:50:48", "level": "INFO", "message": "Analyzer model changed to: 🕒 gemma:2b"}
+{"timestamp": "2025-07-04T14:50:48", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 gemma:2b, Verifier: gemma:2b"}
+{"timestamp": "2025-07-04T14:50:49", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 gemma:2b, Verifier: "}
+{"timestamp": "2025-07-04T14:50:49", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 gemma:2b, Verifier: 🕒 gemma:2b"}
+{"timestamp": "2025-07-04T14:50:52", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 gemma:2b, Verifier: llama2:7b"}
+{"timestamp": "2025-07-04T14:50:52", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 gemma:2b, Verifier: "}
+{"timestamp": "2025-07-04T14:50:52", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 gemma:2b, Verifier: 🕒 llama2:7b"}
+{"timestamp": "2025-07-04T14:50:56", "level": "INFO", "message": "Analyzer model changed to: llama3:8b"}
+{"timestamp": "2025-07-04T14:50:56", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: llama3:8b, Verifier: 🕒 llama2:7b"}
+{"timestamp": "2025-07-04T14:50:56", "level": "INFO", "message": "Analyzer model changed to: "}
+{"timestamp": "2025-07-04T14:50:56", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: , Verifier: 🕒 llama2:7b"}
+{"timestamp": "2025-07-04T14:50:56", "level": "INFO", "message": "Analyzer model changed to: 🕒 llama3:8b"}
+{"timestamp": "2025-07-04T14:50:56", "level": "INFO", "message": "Dual-LLM mode set to False, Analyzer: 🕒 llama3:8b, Verifier: 🕒 llama2:7b"}
+{"timestamp": "2025-07-04T14:51:04", "level": "INFO", "message": "Dual-LLM mode disabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T14:51:04", "level": "INFO", "message": "Verifier model changed to: 🕒 llama2:7b"}
+{"timestamp": "2025-07-04T14:51:04", "level": "INFO", "message": "Dual-LLM mode set to True, Analyzer: 🕒 llama3:8b, Verifier: 🕒 llama2:7b"}
+{"timestamp": "2025-07-04T14:51:26", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T14:51:32", "level": "INFO", "message": "Dual LLM for SONY: HOLD"}
+{"timestamp": "2025-07-04T14:51:32", "level": "INFO", "message": "User started analysis."}
+{"timestamp": "2025-07-04T14:51:38", "level": "INFO", "message": "Dual LLM for SONY: HOLD"}
+{"timestamp": "2025-07-04T14:51:49", "level": "INFO", "message": "User selected LLM model: qwen3:8b"}
+{"timestamp": "2025-07-04T14:51:49", "level": "INFO", "message": "User selected LLM model: "}
+{"timestamp": "2025-07-04T14:51:49", "level": "INFO", "message": "User selected LLM model: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T14:51:55", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T14:51:55", "level": "INFO", "message": "User selected LLM model: "}
+{"timestamp": "2025-07-04T14:51:55", "level": "INFO", "message": "User selected LLM model: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T14:51:55", "level": "INFO", "message": "User selected LLM model: llama3:8b"}
+{"timestamp": "2025-07-04T14:51:55", "level": "INFO", "message": "Ollama model dropdown refreshed."}
+{"timestamp": "2025-07-04T14:52:04", "level": "INFO", "message": "Event Log popout opened."}
+{"timestamp": "2025-07-04T14:52:05", "level": "INFO", "message": "Smart Table popout opened."}
+{"timestamp": "2025-07-04T14:52:08", "level": "INFO", "message": "Advanced Charts popout opened."}
+{"timestamp": "2025-07-04T14:52:10", "level": "INFO", "message": "P&L Dashboard popout opened."}
+{"timestamp": "2025-07-04T14:52:13", "level": "INFO", "message": "Advanced Charts popout opened."}
+{"timestamp": "2025-07-04T14:52:16", "level": "INFO", "message": "Smart Table popout opened."}
+{"timestamp": "2025-07-04T14:52:20", "level": "INFO", "message": "User triggered double-pass LLM analysis."}
+{"timestamp": "2025-07-04T14:53:12", "level": "INFO", "message": "Generating demo trading session..."}
+{"timestamp": "2025-07-04T14:53:12", "level": "INFO", "message": "Added long trade: SPY @ 407.62975869528225"}
+{"timestamp": "2025-07-04T14:53:12", "level": "INFO", "message": "Added long trade: QQQ @ 390.09100740004584"}
+{"timestamp": "2025-07-04T14:53:13", "level": "INFO", "message": "Demo trades and data generated"}
+{"timestamp": "2025-07-04T14:53:16", "level": "INFO", "message": "Demo trading session generated successfully"}
+{"timestamp": "2025-07-04T14:53:28", "level": "INFO", "message": "User triggered dual LLM analysis."}
+{"timestamp": "2025-07-04T14:53:38", "level": "INFO", "message": "Smart Table popout opened."}
+{"timestamp": "2025-07-04T14:53:39", "level": "INFO", "message": "Advanced Charts popout opened."}
+{"timestamp": "2025-07-04T14:53:42", "level": "INFO", "message": "P&L Dashboard popout opened."}
+{"timestamp": "2025-07-04T14:53:51", "level": "INFO", "message": "User started backtest."}
+{"timestamp": "2025-07-04T14:53:51", "level": "INFO", "message": "Backtest requested for: SONY. Starting worker..."}
+{"timestamp": "2025-07-04T14:53:51", "level": "INFO", "message": "Starting backtest in background..."}
+{"timestamp": "2025-07-04T14:53:53", "level": "INFO", "message": "Backtest for SONY (yfinance): PnL=12.46, Win Rate=60.4%, Trades=107"}
+{"timestamp": "2025-07-04T14:53:53", "level": "INFO", "message": "Background backtest completed."}
+{"timestamp": "2025-07-04T14:53:54", "level": "INFO", "message": "Backtest worker finished. Results received."}
+{"timestamp": "2025-07-04T14:53:54", "level": "DEBUG", "message": "Backtest worker <__main__.BacktestWorker(0x196585e0dc0) at 0x000001966BC33400> removed from tracking list."}
+{"timestamp": "2025-07-04T14:55:03", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.530493", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.531814", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01.532110", "level": "INFO", "message": "analysis_start", "module": "portfolio_optimization"}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "portfolio_optimization_request", "symbols": ["AAPL", "GOOGL"], "capital": 50000}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "portfolio_optimization_complete", "allocation": {"AAPL": 0.6, "GOOGL": 0.4}, "expected_return": 0.12}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "analysis_complete", "module": "portfolio_optimization", "success": true}
+{"timestamp": "2025-07-04T15:06:01.533248", "level": "INFO", "message": "widget_data_update", "routed_from": {"module": "portfolio_optimization", "success": true}}
+{"timestamp": "2025-07-04T15:06:01.533588", "level": "INFO", "message": "llm_analysis_request", "routed_from": {"module": "portfolio_optimization", "success": true}}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.537029", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.537944", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "autogen_agents_request", "trading_strategy": "momentum", "symbols": ["TSLA"]}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.540989", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.541892", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "backtesting_momentum_request", "timeframe": "1year", "symbols": ["AAPL"], "strategy": "SMA_crossover"}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.544478", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.545400", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "chroma_knowledge_request", "query": "latest market trends for tech stocks", "collection": "financial_news", "limit": 10}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.547891", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.548803", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01.549077", "level": "ERROR", "message": "analysis_error", "module": "risk_return_analysis", "error": "Insufficient data"}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.551676", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.552731", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "ethereum_analysis_request", "timeframe": "1month", "indicators": ["RSI", "MACD"]}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.555652", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.556584", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "analysis_complete", "analysis_type": "momentum", "signal": "BUY", "confidence": 0.8}
+{"timestamp": "2025-07-04T15:06:01.557126", "level": "INFO", "message": "widget_data_update", "routed_from": {"analysis_type": "momentum", "signal": "BUY", "confidence": 0.8}}
+{"timestamp": "2025-07-04T15:06:01.557394", "level": "INFO", "message": "llm_analysis_request", "routed_from": {"analysis_type": "momentum", "signal": "BUY", "confidence": 0.8}}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.560016", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.561184", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.563535", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.564459", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "financial_statements_request", "symbol": "AAPL", "period": "quarterly", "years": 3}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.567404", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.568704", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "n8n_workflow_request", "workflow_id": "trading_automation_v1", "trigger": "market_open", "parameters": {"symbols": ["SPY", "QQQ"]}}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.571967", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.572861", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "platform_standardization_request", "symbols": ["AAPL", "MSFT"], "timeframe": "1year"}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:01.575570", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:01.576545", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:01", "level": "INFO", "message": "portfolio_optimization_request", "risk_tolerance": "moderate", "capital": 10000}
+{"timestamp": "2025-07-04T15:06:16", "level": "INFO", "message": "ShnifterDataManager initialized"}
+{"timestamp": "2025-07-04T15:06:16", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T15:06:20", "level": "INFO", "message": "ShnifterDataManager initialized"}
+{"timestamp": "2025-07-04T15:06:20", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T15:06:20", "level": "INFO", "message": "Shnifter Unittest Suite started"}
+{"timestamp": "2025-07-04T15:06:20", "level": "INFO", "message": "test_run_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T15:06:20", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T15:06:20", "level": "INFO", "message": "TestShnifterData.test_warning_on_missing_column started"}
+{"timestamp": "2025-07-04T15:06:20", "level": "INFO", "message": "test_run_success", "test": "TestShnifterData.test_warning_on_missing_column"}
+{"timestamp": "2025-07-04T15:06:20", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T15:06:24", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_historical_price_structure"}
+{"timestamp": "2025-07-04T15:06:24", "level": "INFO", "message": "test_run_start", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T15:06:25", "level": "INFO", "message": "test_run_success", "test": "TestYFinanceProvider.test_get_news_structure"}
+{"timestamp": "2025-07-04T15:06:25", "level": "INFO", "message": "test_run_start", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T15:06:25", "level": "INFO", "message": "test_run_success", "test": "TestTechnicalAnalysisToolkit.test_calculate_sma"}
+{"timestamp": "2025-07-04T15:06:25", "level": "INFO", "message": "test_run_start", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T15:06:26", "level": "INFO", "message": "test_run_success", "test": "TestShnifterBB.test_integration_price_and_sma"}
+{"timestamp": "2025-07-04T15:06:26", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T15:06:26", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_ml_signal"}
+{"timestamp": "2025-07-04T15:06:26", "level": "INFO", "message": "test_run_start", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T15:06:26", "level": "INFO", "message": "test_run_success", "test": "TestAnalysisWorker.test_trend_signal"}
+{"timestamp": "2025-07-04T15:06:26", "level": "INFO", "message": "Shnifter Unittest Suite passed"}
+{"timestamp": "2025-07-04T15:06:28", "level": "INFO", "message": "ShnifterDataManager initialized"}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.310543", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.310910", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30.311184", "level": "INFO", "message": "analysis_start", "module": "portfolio_optimization"}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "portfolio_optimization_request", "symbols": ["AAPL", "GOOGL"], "capital": 50000}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "portfolio_optimization_complete", "allocation": {"AAPL": 0.6, "GOOGL": 0.4}, "expected_return": 0.12}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "analysis_complete", "module": "portfolio_optimization", "success": true}
+{"timestamp": "2025-07-04T15:06:30.312196", "level": "INFO", "message": "widget_data_update", "routed_from": {"module": "portfolio_optimization", "success": true}}
+{"timestamp": "2025-07-04T15:06:30.312441", "level": "INFO", "message": "llm_analysis_request", "routed_from": {"module": "portfolio_optimization", "success": true}}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.313299", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.313630", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "autogen_agents_request", "trading_strategy": "momentum", "symbols": ["TSLA"]}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.314714", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.315064", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "backtesting_momentum_request", "timeframe": "1year", "symbols": ["AAPL"], "strategy": "SMA_crossover"}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.316293", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.316629", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "chroma_knowledge_request", "query": "latest market trends for tech stocks", "collection": "financial_news", "limit": 10}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.317868", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.318240", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30.318496", "level": "ERROR", "message": "analysis_error", "module": "risk_return_analysis", "error": "Insufficient data"}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.319348", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.319679", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "ethereum_analysis_request", "timeframe": "1month", "indicators": ["RSI", "MACD"]}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.320721", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.321045", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "analysis_complete", "analysis_type": "momentum", "signal": "BUY", "confidence": 0.8}
+{"timestamp": "2025-07-04T15:06:30.321545", "level": "INFO", "message": "widget_data_update", "routed_from": {"analysis_type": "momentum", "signal": "BUY", "confidence": 0.8}}
+{"timestamp": "2025-07-04T15:06:30.321794", "level": "INFO", "message": "llm_analysis_request", "routed_from": {"analysis_type": "momentum", "signal": "BUY", "confidence": 0.8}}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.322663", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.323021", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.323912", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.324248", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "financial_statements_request", "symbol": "AAPL", "period": "quarterly", "years": 3}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.325412", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.325743", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "n8n_workflow_request", "workflow_id": "trading_automation_v1", "trigger": "market_open", "parameters": {"symbols": ["SPY", "QQQ"]}}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.326823", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.327160", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "platform_standardization_request", "symbols": ["AAPL", "MSFT"], "timeframe": "1year"}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:06:30.328187", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:06:30.328503", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:06:30", "level": "INFO", "message": "portfolio_optimization_request", "risk_tolerance": "moderate", "capital": 10000}
+{"timestamp": "2025-07-04T15:06:34", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T15:06:40", "level": "INFO", "message": "Dual LLM for TEST: HOLD"}
+{"timestamp": "2025-07-04T15:06:40", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T15:06:40", "level": "INFO", "message": "Test message for lifecycle"}
+{"timestamp": "2025-07-04T15:06:42", "level": "INFO", "message": "Analyzer model changed to: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T15:06:42", "level": "INFO", "message": "Analyzer model changed to: llama3:8b"}
+{"timestamp": "2025-07-04T15:06:42", "level": "INFO", "message": "Loaded 5 LLM models successfully"}
+{"timestamp": "2025-07-04T15:06:42", "level": "INFO", "message": "LLM Manager connected to real data manager"}
+{"timestamp": "2025-07-04T15:06:45", "level": "INFO", "message": "Analyzer model changed to: "}
+{"timestamp": "2025-07-04T15:06:45", "level": "INFO", "message": "Analyzer model changed to: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T15:06:45", "level": "INFO", "message": "Analyzer model changed to: llama3:8b"}
+{"timestamp": "2025-07-04T15:06:45", "level": "INFO", "message": "Loaded 5 LLM models successfully"}
+{"timestamp": "2025-07-04T15:06:47", "level": "INFO", "message": "Analyzer model changed to: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T15:06:47", "level": "INFO", "message": "Analyzer model changed to: llama3:8b"}
+{"timestamp": "2025-07-04T15:06:47", "level": "INFO", "message": "Loaded 5 LLM models successfully"}
+{"timestamp": "2025-07-04T15:06:47", "level": "INFO", "message": "LLM Manager connected to real data manager"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "Analyzer model changed to: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "Analyzer model changed to: llama3:8b"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "Loaded 5 LLM models successfully"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "LLM Manager connected to real data manager"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "Dual-LLM mode enabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_start", "test": "event_system_end_to_end"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_complete", "test": "event_system_end_to_end", "status": "success", "events_captured": 1}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_start", "test": "popout_registry_integration"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_complete", "test": "popout_registry_integration", "status": "success", "registered_widgets_count": 0}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_9053df5d"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T15:06:49", "level": "INFO", "message": "test_complete", "test": "table_widget_functionality", "status": "success", "data_rows": 3}
+{"timestamp": "2025-07-04T15:06:55.498654", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T15:06:55", "level": "INFO", "message": "test_complete", "test": "event_system_integration", "events_captured": 1}
+{"timestamp": "2025-07-04T15:06:55.505242", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T15:06:55", "level": "INFO", "message": "test_complete", "test": "shnifter_data_creation", "data_rows": 3}
+{"timestamp": "2025-07-04T15:06:55.509347", "level": "INFO", "message": "test_setup", "test_framework": "pytest"}
+{"timestamp": "2025-07-04T15:06:55", "level": "INFO", "message": "test_complete", "test": "widget_imports", "widgets_imported": ["ShnifterChartWidget", "ShnifterTableWidget"]}
+{"timestamp": "2025-07-04T15:07:40", "level": "INFO", "message": "ShnifterDataManager initialized"}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Analysis modules loaded successfully"}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.240213", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.240605", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42.240851", "level": "INFO", "message": "analysis_start", "module": "portfolio_optimization"}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "portfolio_optimization_request", "symbols": ["AAPL", "GOOGL"], "capital": 50000}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "portfolio_optimization_complete", "allocation": {"AAPL": 0.6, "GOOGL": 0.4}, "expected_return": 0.12}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "analysis_complete", "module": "portfolio_optimization", "success": true}
+{"timestamp": "2025-07-04T15:07:42.241894", "level": "INFO", "message": "widget_data_update", "routed_from": {"module": "portfolio_optimization", "success": true}}
+{"timestamp": "2025-07-04T15:07:42.242156", "level": "INFO", "message": "llm_analysis_request", "routed_from": {"module": "portfolio_optimization", "success": true}}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.243103", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.243425", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "autogen_agents_request", "trading_strategy": "momentum", "symbols": ["TSLA"]}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.244617", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.244955", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "backtesting_momentum_request", "timeframe": "1year", "symbols": ["AAPL"], "strategy": "SMA_crossover"}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.246212", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.246543", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "chroma_knowledge_request", "query": "latest market trends for tech stocks", "collection": "financial_news", "limit": 10}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.247571", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.247908", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42.248146", "level": "ERROR", "message": "analysis_error", "module": "risk_return_analysis", "error": "Insufficient data"}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.248920", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.249249", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "ethereum_analysis_request", "timeframe": "1month", "indicators": ["RSI", "MACD"]}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.250348", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.250670", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "analysis_complete", "analysis_type": "momentum", "signal": "BUY", "confidence": 0.8}
+{"timestamp": "2025-07-04T15:07:42.251164", "level": "INFO", "message": "widget_data_update", "routed_from": {"analysis_type": "momentum", "signal": "BUY", "confidence": 0.8}}
+{"timestamp": "2025-07-04T15:07:42.251409", "level": "INFO", "message": "llm_analysis_request", "routed_from": {"analysis_type": "momentum", "signal": "BUY", "confidence": 0.8}}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.252200", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.252541", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.253419", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.253775", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "financial_statements_request", "symbol": "AAPL", "period": "quarterly", "years": 3}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.254892", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.255225", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "n8n_workflow_request", "workflow_id": "trading_automation_v1", "trigger": "market_open", "parameters": {"symbols": ["SPY", "QQQ"]}}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.256266", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.256585", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "platform_standardization_request", "symbols": ["AAPL", "MSFT"], "timeframe": "1year"}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "Event logs cleared"}
+{"timestamp": "2025-07-04T15:07:42.257597", "level": "INFO", "message": "wiring_start", "process": "complete_event_wiring"}
+{"timestamp": "2025-07-04T15:07:42.257928", "level": "INFO", "message": "wiring_complete", "components_wired": 57}
+{"timestamp": "2025-07-04T15:07:42", "level": "INFO", "message": "portfolio_optimization_request", "risk_tolerance": "moderate", "capital": 10000}
+{"timestamp": "2025-07-04T15:07:45", "level": "INFO", "message": "Fetched Ollama models: ['llama3:8b', 'gemma:2b', 'llama2:7b', 'qwen3:8b', 'llama2:latest']"}
+{"timestamp": "2025-07-04T15:07:51", "level": "INFO", "message": "Dual LLM for TEST: HOLD"}
+{"timestamp": "2025-07-04T15:07:51", "level": "INFO", "message": "Application closing."}
+{"timestamp": "2025-07-04T15:07:51", "level": "INFO", "message": "Test message for lifecycle"}
+{"timestamp": "2025-07-04T15:07:53", "level": "INFO", "message": "Analyzer model changed to: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T15:07:53", "level": "INFO", "message": "Analyzer model changed to: llama3:8b"}
+{"timestamp": "2025-07-04T15:07:53", "level": "INFO", "message": "Loaded 5 LLM models successfully"}
+{"timestamp": "2025-07-04T15:07:53", "level": "INFO", "message": "LLM Manager connected to real data manager"}
+{"timestamp": "2025-07-04T15:07:55", "level": "INFO", "message": "Analyzer model changed to: "}
+{"timestamp": "2025-07-04T15:07:55", "level": "INFO", "message": "Analyzer model changed to: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T15:07:55", "level": "INFO", "message": "Analyzer model changed to: llama3:8b"}
+{"timestamp": "2025-07-04T15:07:55", "level": "INFO", "message": "Loaded 5 LLM models successfully"}
+{"timestamp": "2025-07-04T15:07:57", "level": "INFO", "message": "Analyzer model changed to: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T15:07:57", "level": "INFO", "message": "Analyzer model changed to: llama3:8b"}
+{"timestamp": "2025-07-04T15:07:57", "level": "INFO", "message": "Loaded 5 LLM models successfully"}
+{"timestamp": "2025-07-04T15:07:57", "level": "INFO", "message": "LLM Manager connected to real data manager"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "Analyzer model changed to: 🕒 qwen3:8b"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "Analyzer model changed to: llama3:8b"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "Loaded 5 LLM models successfully"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "LLM Manager connected to real data manager"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "Dual-LLM mode enabled from LLM Manager popout."}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_message", "test_data": "test_value"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_start", "test": "backtesting_momentum_module"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_complete", "test": "backtesting_momentum_module", "status": "success"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_start", "test": "portfolio_optimization_module"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_complete", "test": "portfolio_optimization_module", "status": "success", "results_keys": ["analysis_type", "results", "timestamp"]}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_data_validation"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_data_validation", "status": "success"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_start", "test": "TestShnifterData.test_to_df_and_to_dict"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_complete", "test": "TestShnifterData.test_to_df_and_to_dict", "status": "success"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_start", "test": "event_system_end_to_end"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_complete", "test": "event_system_end_to_end", "status": "success", "events_captured": 1}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_start", "test": "popout_registry_integration"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_complete", "test": "popout_registry_integration", "status": "success", "registered_widgets_count": 0}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_start", "test": "chart_widget_creation"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_complete", "test": "chart_widget_creation", "status": "success", "widget_id": "shnifter_plotly_getxrange_2401aa9c"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_start", "test": "table_widget_functionality"}
+{"timestamp": "2025-07-04T15:08:00", "level": "INFO", "message": "test_complete", "test": "table_widget_functionality", "status": "success", "data_rows": 3}

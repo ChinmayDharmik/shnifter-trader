@@ -1,0 +1,7 @@
+{
+  "dual_llm_enabled": false,
+  "analyzer_model": "\ud83d\udd52 qwen3:8b",
+  "verifier_model": "gemma:2b",
+  "temperature": 0.8,
+  "max_tokens": 1000
+}
