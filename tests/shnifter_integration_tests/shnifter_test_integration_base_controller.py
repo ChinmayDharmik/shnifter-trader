@@ -1,11 +1,4 @@
-import unittest
-from unittest.mock import Mock, patch
-import pandas as pd
-from datetime import datetime
-
-"""Integration tests for the base_controller module."""
-
-from unittest.mock import Mock, patch
+"""Integration tests for :mod:`shnifter_interface.controllers.base_controller`."""
 
 import pytest
 from shnifter_interface.controllers.base_controller import BaseController
@@ -14,7 +7,7 @@ from shnifter_interface.session import Session
 # pylint: disable=unused-variable, redefined-outer-name
 
 
-class TestShnifter\1(BaseController):
+class TestController(BaseController):
     """Test controller for the BaseController."""
 
     PATH = "/test/"

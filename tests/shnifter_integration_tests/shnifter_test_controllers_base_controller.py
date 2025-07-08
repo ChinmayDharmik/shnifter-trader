@@ -1,9 +1,5 @@
 import unittest
-from unittest.mock import Mock, patch
-import pandas as pd
-from datetime import datetime
-
-"""Test the base controller."""
+"""Integration tests for :mod:`shnifter_interface.controllers.base_controller`."""
 
 from unittest.mock import MagicMock, patch
 
@@ -13,7 +9,7 @@ from shnifter_interface.controllers.base_controller import BaseController
 # pylint: disable=unused-argument, unused-variable
 
 
-class TestShnifter\1(BaseController):
+class TestableBaseController(BaseController):
     """Testable Base Controller."""
 
     def __init__(self, queue=None):
